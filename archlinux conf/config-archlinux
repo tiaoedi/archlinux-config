@@ -1,0 +1,61 @@
+
+instalação xfce4
+sudo pacman -Syyu
+
+sudo pacman -S xorg-server xorg-apps
+
+sudo pacman -S lightdm lightdm-gtk-greeter
+
+sudo pacman -S xfce4 xfce4-goodies 
+
+
+traduzir archlinux
+1 
+nano /etc/locale.gen
+2
+nano /etc/locale-gen
+3
+locale.conf
+LANG=pt_BR.UTF-8
+4
+nano /etc/vconsole.conf
+KEYMAP=br-abnt2
+5
+nano /etc/hosts
+
+ Static table lookup for hostnames.
+# See hosts(5) for details.
+127.0.0.1       localhost
+::1             localhost
+127.0.1.1       archlinux-pclinux
+
+
+comando para trocar dns
+sudo vim /etc/resolv.conf 
+chattr +i /etc/resolv.conf
+chattr -i /etc/resolv.conf
+dns 1.1.1.1
+2>dns 1.0.0.1
+traduzir libreoffice
+sudo pacman -S extra/libreoffice-fresh-pt
+
+comando pra baixar videos
+ sudo youtube-dl https://youtu.be/1uegkJDNkO4
+ 
+ app para visualizar imagens
+flatpak install flathub org.gnome.Shotwell 
+ 
+add user
+useradd -m nome
+passwd nome
+
+ 
+ trocar temas awesomewm 
+ /usr/share/awesome/themes
+ 
+ papel de pparede
+ 
+ beautiful.wallpaper
+ 
+ comando para criar entrada de login
+  cd /usr/share/xsessions

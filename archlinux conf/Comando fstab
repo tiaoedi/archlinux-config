@@ -1,0 +1,12 @@
+Comando fstab
+
+lsblk
+sudo blkid
+sudo mkdir /mnt/media
+
+ sudo vim /etc/fstab
+ UUID=77a8a724-890d-4771-831c-f3a5f14829f1  /mnt/media           ext4 defaults,user 0  2
+ 
+ sudo mount -a
+ df /dev/sda1
+ 

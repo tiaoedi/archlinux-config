@@ -1,0 +1,53 @@
+    
+        configuração antiga
+    font pango: Inconsolata for Powerline 12
+187         position top
+188         status_command bumblebee-status \
+189
+190      #  -m title amixer datetime \
+191     # "%d %b %Y, %a %H:%M" \
+192
+
+###################################
+
+       configuração nova
+
+   font pango: Inconsolata for Powerline 12
+        position top
+
+   status_command bumblebee-status \
+     -m pasink pasource cpu memory time \
+     -p time.format="%d %b %Y, %a %H:%M" \
+     -t solarized
+
+
+###############################################
+
+nano .config/i3/config 
+
+
+#Minhas personalisações
+exec --no-startup-id numlockx on
+exec --no-startup-id com.dropbox.Client
+exec --no-startup-id nitrogen --restore
+
+
+#Firefox
+bindsym $mod+F1 exec firefox
+
+
+#Google Chrome
+bindsym $mod+F2 exec google-chrome-stable
+
+#Brave
+bindsym $mod+F3 exec brave
+
+#Nautilus
+bindsym $mod+F4 exec nautilus
+
+#Shutdown
+bindsym $mod+Shift+X exec shutdown now
+
+#Reboot
+bindsym $mod+Shift+H exec reboot
+

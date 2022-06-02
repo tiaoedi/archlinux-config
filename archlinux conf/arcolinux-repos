@@ -1,0 +1,8 @@
+instalação arcolinux repo
+
+wget bit.ly/get-arcolinux-keys && chmod +x ./get-
+arcolinux-keys && sudo ./get-arcolinux-keys
+
+git clone https://github.com/erikdubois/arcolinux-nemesis.git
+
+sudo pacman -S archlinux-tweak-tool-git

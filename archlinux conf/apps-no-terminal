@@ -1,0 +1,22 @@
+
+
+###################################################
+########LISTA DE APPS NO TERMMINAL#################
+###################################################
+
+#visualizar espequitro de audio
+cava
+
+#visualizar o relogio no ter tina
+tty-clock -sc
+
+#visualizar calculadora no terminal
+qalc
+
+#visualizar previsão do tempo no terminal
+curl wttr.in
+
+#visualizar monitor do sistema no terminal
+1 htop
+2 bpyto
+3 bashtop
