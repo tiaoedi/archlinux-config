@@ -23,6 +23,10 @@ KEYMAP=br-abnt2
 5
 nano /etc/hosts
 
+6
+
+dialog
+
  Static table lookup for hostnames.
 # See hosts(5) for details.
 127.0.0.1       localhost
@@ -59,3 +63,53 @@ passwd nome
  
  comando para criar entrada de login
   cd /usr/share/xsessions
+
+#extenções
+Dark Reader
+DownThemAll!
+EazyBe: Powering Whatsapp Web for Work Free
+
+#Cursor dracula
+ sudo pacman -S dracula-
+
+
+# ZSH Suggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+Adicione:
+zsh-autosuggestions (plugins)
+
+#themas acrh linux
+
+#LXAppearance
+sudo pacman -S lxappearance
+
+#calendario gtk
+ yay gsimplecal
+
+yay volumeicon
+sudo pacman -S fluent-
+sudo pacman -S graphite
+sudo pacman -S fluent-
+sudo pacman -S materia-
+ sudo pacman -S orchis-
+
+#visualizador de imagens
+ sudo pacman -S ristretto
+
+github: https://github.com/erikdubois/arcolinux-nemesis.git
+
+#ver acor via terminal
+ yay xcolor
+
+#nerdfonts
+https://fontawesome.com/v5/cheatsheet
+
+#resolução da tele
+xrandr -s 1920x1080
+
+
+
+
+
+
