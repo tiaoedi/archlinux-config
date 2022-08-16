@@ -1,31 +1,17 @@
 #!/bin/bash
 
-##################################################################################################################
 
-##################################################################################################################
-#
-# 
-#
-##################################################################################################################
-#tput setaf 0 = black
-#tput setaf 1 = red
-#tput setaf 2 = green
-#tput setaf 3 = yellow
-#tput setaf 4 = dark blue
-#tput setaf 5 = purple
-#tput setaf 6 = cyan
-#tput setaf 7 = gray
-#tput setaf 8 = light blue
 ##################################################################################################################
 
 echo
 tput setaf 2
 echo "################################################################"
-echo "################### Software to install for ALL"
+echo "################### Instalando apps por favor aguarde!!!"
 echo "################################################################"
 tput sgr0
 echo
 
+sudo pacman -Syyu --noconfirm --needed
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
@@ -177,6 +163,7 @@ sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
+sudo pacman -S --noconfirm --needed virtualbox
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
@@ -202,15 +189,14 @@ if grep -q "Arch Linux" /etc/os-release; then
   echo "################################################################"
   echo
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
-  sudo wget https://raw.githubusercontent.com/arcolinux/arcolinuxl-iso/master/archiso/airootfs/etc/nsswitch.conf -O $workdir/etc/nsswitch.conf
-
+  
 fi
 
 
 echo
 tput setaf 2
 echo "################################################################"
-echo "################### Done"
+echo "################### Instalação concluida com sucesso!!!"
 echo "################################################################"
 tput sgr0
 echo
