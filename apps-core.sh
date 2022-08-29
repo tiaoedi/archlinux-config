@@ -145,9 +145,8 @@ sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
 sudo pacman -S --noconfirm --needed bluez
 sudo pacman -S --noconfirm --needed bluez-libs
 sudo pacman -S --noconfirm --needed bluez-utils
-if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
-  sudo pacman -S --noconfirm --needed blueberry
-fi
+sudo pacman -S --noconfirm --needed blueberry
+
 sudo pacman -S --noconfirm --needed cups
 sudo pacman -S --noconfirm --needed cups-pdf
 sudo pacman -S --noconfirm --needed ghostscript
@@ -163,19 +162,18 @@ sudo pacman -S --noconfirm --needed rxvt-unicode
 sudo pacman -S --noconfirm --needed urxvt-fullscreen
 sudo pacman -S --noconfirm --needed urxvt-perls
 sudo pacman -S --noconfirm --needed urxvt-resize-font-git
-
+sudo pacman -S --noconfirm --needed picom
 sudo pacman -S --noconfirm --needed gzip
 sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
-
-if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
-  sudo pacman -S --noconfirm --needed qt5ct
-fi
-
-###############################################################################################
+sudo pacman -S --noconfirm --needed qt5ct
+sudo pacman -S --noconfirm --needed thunar
+sudo pacman -S --noconfirm --needed mousepad
+sudo pacman -S --noconfirm --needed ristretto
+##############################################################################################
 
 
 # when on Arch Linux

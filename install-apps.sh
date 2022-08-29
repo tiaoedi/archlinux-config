@@ -47,8 +47,10 @@ sudo pacman -S mousepad --noconfirm --needed
 
 sudo pacman -S ristretto --noconfirm --needed
 
-paru -S timeshift-bin --noconfirm --needed
+yay -S timeshift-autosnap --noconfirm --needed
 
-paru -S timeshift-autosnap --noconfirm --needed
+yay -S volumeicon-gtk2 --noconfirm --needed
+
+yay -S sublime-text-4 --noconfirm --needed
 
 echo "instalção concluida com sucesso!!!"
