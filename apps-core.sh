@@ -31,6 +31,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru/
 echo "Instalando paru por favor aguarde!!!!"
 makepkg -si --noconfirm --needed 
+
 cd
 paru -Syyu --noconfirm --needed 
 
