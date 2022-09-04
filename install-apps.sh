@@ -39,7 +39,7 @@ echo "Instalando dropbox agurde!!!"
 yay -S dropbox --noconfirm --needed
 
 echo "Instalando evolution agurde!!!"
-sudo pacman -S evolution --noconfirm --needed
+sudo pacman -S thunderbird --noconfirm --needed
 
 sudo pacman -S thunar --noconfirm --needed
 
@@ -52,5 +52,9 @@ yay -S timeshift-autosnap --noconfirm --needed
 yay -S volumeicon-gtk2 --noconfirm --needed
 
 yay -S sublime-text-4 --noconfirm --needed
+
+mkdir /home/pclinux/Documentos/Videos-obs/
+
+mkdir /home/pclinux/Documentos/Videos-kdenlive/
 
 echo "instalção concluida com sucesso!!!"

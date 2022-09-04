@@ -18,6 +18,22 @@ tput sgr0
 echo
 
 sudo pacman -Syyu --noconfirm --needed
+git clone https://aur.archlinux.org/yay.git
+ cd yay/
+echo "Instalando yay por favor aguarde!!!"
+  makepkg -si --noconfirm --needed 
+
+  cd
+yay -Syyu --noconfirm --needed 
+
+
+git clone https://aur.archlinux.org/paru.git
+cd paru/
+echo "Instalando paru por favor aguarde!!!!"
+makepkg -si --noconfirm --needed 
+cd
+paru -Syyu --noconfirm --needed 
+
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
