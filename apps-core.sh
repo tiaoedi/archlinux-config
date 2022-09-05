@@ -37,6 +37,9 @@ makepkg -si --noconfirm --needed
 cd
 paru -Syyu --noconfirm --needed 
 
+sudo pacman -Syyu --noconfirm --needed 
+sudo pacman -S flatpak --noconfirm --needed 
+sudo pacman -Syyu --noconfirm --needed 
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
