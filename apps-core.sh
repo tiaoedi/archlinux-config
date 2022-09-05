@@ -69,7 +69,7 @@ sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
-sudo pacman -S --noconfirm --needed flameshot-git
+sudo pacman -S --noconfirm --needed flameshot
 sudo pacman -S --noconfirm --needed fluent-icon-theme-git
 sudo pacman -S --noconfirm --needed font-manager
 sudo pacman -S --noconfirm --needed galculator
@@ -100,6 +100,7 @@ sudo pacman -S --noconfirm --needed meld
 sudo pacman -S --noconfirm --needed mintstick-git
 sudo pacman -S --noconfirm --needed most
 sudo pacman -S --noconfirm --needed neofetch
+sudo pacman -S --noconfirm --needed ufetch
 sudo pacman -S --noconfirm --needed network-manager-applet
 sudo pacman -S --noconfirm --needed networkmanager-openvpn
 sudo pacman -S --noconfirm --needed nomacs
@@ -109,7 +110,6 @@ sudo pacman -S --noconfirm --needed nss-mdns
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed oh-my-zsh-git
 sudo pacman -S --noconfirm --needed openresolv
-sudo pacman -S --noconfirm --needed paru-bin
 sudo pacman -S --noconfirm --needed pavucontrol
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed polkit-gnome
@@ -151,7 +151,6 @@ sudo pacman -S --noconfirm --needed wttr
 sudo pacman -S --noconfirm --needed xcolor
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed xorg-xkill
-sudo pacman -S --noconfirm --needed yay-bin
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
@@ -190,6 +189,10 @@ sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed mousepad
 sudo pacman -S --noconfirm --needed ristretto
+sudo pacman -S --noconfirm --needed nitrogen
+sudo pacman -S --noconfirm --needed lxappearance
+sudo pacman -S --noconfirm --needed thunderbird
+
 ##############################################################################################
 
 
@@ -199,16 +202,13 @@ if grep -q "Arch Linux" /etc/os-release; then
   echo
   tput setaf 2
   echo "################################################################"
-  echo "############### Installing software for Arch Linux - Any desktop"
+  echo "############### Installing apps Arch Linux "
   echo "################################################################"
   tput sgr0
-  echo
+  
 
-  echo
-  echo "################################################################"
-  echo "Getting latest /etc/nsswitch.conf from ArcoLinux"
-  echo "################################################################"
-  echo
+  
+  echo "Instalando apps aguarde!!!!"
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
   
 fi
