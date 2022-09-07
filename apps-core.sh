@@ -205,6 +205,15 @@ sudo pacman -S --noconfirm --needed keepassxc
 
   
   echo "Instalando apps aguarde!!!!"
+
+sudo pacman -Syyu --noconfirm --needed
+
+sudo pacman -S xorg-server xorg-apps --noconfirm --needed
+
+sudo pacman -S lightdm lightdm-gtk-greete --noconfirm --needed
+
+
+
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
   
 
