@@ -28,13 +28,12 @@ echo "Instalando yay por favor aguarde!!!"
   cd
 yay -Syyu --noconfirm --needed 
 
-
 git clone https://aur.archlinux.org/paru.git
-cd paru/
+ cd paru/
 echo "Instalando paru por favor aguarde!!!!"
 makepkg -si --noconfirm --needed 
 
-cd
+ cd
 paru -Syyu --noconfirm --needed 
 
 sudo pacman -Syyu --noconfirm --needed 
@@ -197,7 +196,7 @@ sudo pacman -S --noconfirm --needed ristretto
 sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed thunderbird
-
+sudo pacman -S --noconfirm --needed keepassxc
 ##############################################################################################
 
 

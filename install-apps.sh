@@ -60,8 +60,8 @@ yay -S betterlockscreen --noconfirm --needed
 yay -S gsimplecal --noconfirm --needed 
 sudo pacman -S gnome-weather --noconfirm --needed 
 
-mkdir /home/pclinux/Documentos/Videos-obs/
+mkdir ~/Documentos/Videos-obs/
 
-mkdir /home/pclinux/Documentos/Videos-kdenlive/
+mkdir ~/Documentos/Videos-kdenlive/
 
 echo "instalção concluida com sucesso!!!"
