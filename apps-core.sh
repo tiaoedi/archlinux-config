@@ -20,6 +20,9 @@ tput sgr0
 echo
 
 sudo pacman -Syyu --noconfirm --needed
+
+sudo pacman -S bspwm --noconfirm --needed
+sudo pacman -S sxhkd --noconfirm --needed
  
  cd
 git clone https://aur.archlinux.org/yay.git
@@ -211,7 +214,6 @@ sudo pacman -Syyu --noconfirm --needed
 sudo pacman -S xorg-server xorg-apps --noconfirm --needed
 
 sudo pacman -S lightdm lightdm-gtk-greete --noconfirm --needed
-
 
 
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
