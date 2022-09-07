@@ -20,6 +20,8 @@ tput sgr0
 echo
 
 sudo pacman -Syyu --noconfirm --needed
+ 
+ cd
 git clone https://aur.archlinux.org/yay.git
  cd yay/
 echo "Instalando yay por favor aguarde!!!"
@@ -200,22 +202,27 @@ sudo pacman -S --noconfirm --needed keepassxc
 ##############################################################################################
 
 
-# when on Arch Linux
-
-if grep -q "Arch Linux" /etc/os-release; then
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "############### Installing apps Arch Linux "
-  echo "################################################################"
-  tput sgr0
-  
 
   
   echo "Instalando apps aguarde!!!!"
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
   
-fi
+
+echo "################################################################"
+  echo "############### Criando diretórios, por favor aguarde!!!!! "
+  echo "################################################################"
+
+ cd 
+mkdir ~/.config/bspwm
+mkdir ~/.config/sxhkd
+ cd /usr/share/doc/bspwm/examples
+cp bspwmrc ~/.config/bspwm/
+cp sxhkdrc ~/.config/sxhkd/
+chmod +x ~/.config/sxhkd/sxhkdrc
+chmod +x ~/.config/bspwm/bspwmrc
+ cd 
+
+
 
 
 echo
