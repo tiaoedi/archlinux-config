@@ -21,6 +21,11 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
+#sudo pacman -Syyu --noconfirm --needed
+#sudo pacman -S xorg-server xorg-apps --noconfirm --needed
+#sudo pacman -S lightdm lightdm-gtk-greete --noconfirm --needed
+#sudo pacman -S xfce4 xfce4-goodies --noconfirm --needed
+
 #sudo pacman -S bspwm --noconfirm --needed
 #sudo pacman -S sxhkd --noconfirm --needed
  
@@ -208,10 +213,6 @@ sudo pacman -S --noconfirm --needed keepassxc
 
   
   echo "Instalando apps aguarde!!!!"
-
-#sudo pacman -Syyu --noconfirm --needed
-#sudo pacman -S xorg-server xorg-apps --noconfirm --needed
-#sudo pacman -S lightdm lightdm-gtk-greete --noconfirm --needed
 
 
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
