@@ -21,10 +21,10 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
-#sudo pacman -Syyu --noconfirm --needed
-#sudo pacman -S xorg-server xorg-apps --noconfirm --needed
-#sudo pacman -S lightdm lightdm-gtk-greete --noconfirm --needed
-#sudo pacman -S xfce4 xfce4-goodies --noconfirm --needed
+
+sudo pacman -S gdm --noconfirm --needed
+sudo systemctl enable gdm --noconfirm --needed
+
 
 sudo pacman -S bspwm --noconfirm --needed
 sudo pacman -S sxhkd --noconfirm --needed
@@ -218,7 +218,7 @@ sudo pacman -S --noconfirm --needed keepassxc
   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
   
 
-echo "################################################################"
+  echo "################################################################"
   echo "############### Criando diretórios, por favor aguarde!!!!! "
   echo "################################################################"
 
