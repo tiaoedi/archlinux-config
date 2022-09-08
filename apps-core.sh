@@ -26,8 +26,8 @@ sudo pacman -Syyu --noconfirm --needed
 #sudo pacman -S lightdm lightdm-gtk-greete --noconfirm --needed
 #sudo pacman -S xfce4 xfce4-goodies --noconfirm --needed
 
-#sudo pacman -S bspwm --noconfirm --needed
-#sudo pacman -S sxhkd --noconfirm --needed
+sudo pacman -S bspwm --noconfirm --needed
+sudo pacman -S sxhkd --noconfirm --needed
  
  cd
 git clone https://aur.archlinux.org/yay.git
