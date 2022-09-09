@@ -21,10 +21,7 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
-
 sudo pacman -S gdm --noconfirm --needed
-sudo systemctl enable gdm --noconfirm --needed
-
 
 sudo pacman -S bspwm --noconfirm --needed
 sudo pacman -S sxhkd --noconfirm --needed
@@ -171,6 +168,7 @@ sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
+sudo systemctl enable gdm 
 
 sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
 sudo pacman -S --noconfirm --needed bluez
@@ -201,6 +199,7 @@ sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
 sudo pacman -S --noconfirm --needed qt5ct
+sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed mousepad
 sudo pacman -S --noconfirm --needed ristretto
@@ -210,9 +209,6 @@ sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
 ##############################################################################################
 
-
-
-  
   echo "Instalando apps aguarde!!!!"
 
 
@@ -232,9 +228,6 @@ cp sxhkdrc ~/.config/sxhkd/
 chmod +x ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/bspwm/bspwmrc
  cd 
-
-
-
 
 echo
 tput setaf 2
