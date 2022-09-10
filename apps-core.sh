@@ -21,7 +21,14 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
-sudo pacman -S gdm --noconfirm --needed
+#sudo pacman -S gdm --noconfirm --needed
+
+sudo pacman -S xorg-server xorg-apps --noconfirm --needed
+
+sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
+
+
+
 
 sudo pacman -S bspwm --noconfirm --needed
 sudo pacman -S sxhkd --noconfirm --needed
@@ -168,7 +175,9 @@ sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
-sudo systemctl enable gdm 
+#sudo systemctl enable gdm 
+
+sudo systemctl enable lightdm.service
 
 sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
 sudo pacman -S --noconfirm --needed bluez
