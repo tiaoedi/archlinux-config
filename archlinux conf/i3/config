@@ -1,3 +1,14 @@
+
+##################################################################################################################
+################################      LINUXLIVRE       ###########################################################
+##################################################################################################################
+############# youtube: https://www.youtube.com/channel/UC7mTcm79pzUu4a46X1ththw ##################################
+############# github.com/tiaoedi                                                ##################################
+############# GRUPO DISCORD: https://discord.gg/2CCAE9hBTT                      ##################################
+############# SUPORTE PIX: tiaoedi@gmail.com                                    ##################################
+##################################################################################################################
+
+
 ################# Start of all the settings
 
 # KEY DEFINITIONS TO REMEMBER
@@ -42,6 +53,7 @@ exec --no-startup-id xrandr --output DP0 --right-of HDMI-0 --auto
 # exec --no-startup-id xrandr --output DVI-1 --right-of DVI-0 --auto
 # exec --no-startup-id xrandr --output DVI-D-1 --right-of DVI-I-1 --auto
 # exec --no-startup-id xrandr --output HDMI-2 --right-of HDMI-1 --auto
+exec --no-startup-id xrandr -s 1920x1080 
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -114,7 +126,7 @@ bindsym $mod+Shift+8 move container to workspace 8; workspace 8
 bindsym $mod+Shift+9 move container to workspace 9; workspace 9
 bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
-################# menu's in arcolinux
+################# menu's in archlinux
 
 # start dmenu
 bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
@@ -154,7 +166,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-# ArcoLinux Logout
+# ArchLinux Logout
 bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
 bindsym $mod+X exec --no-startup-id archlinux-logout
 
@@ -336,8 +348,8 @@ font pango:Noto Mono Regular 13
 
 # USER APPLICATIONS TO START AT BOOT
 
-# ArcoLinux Welcome App
-exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
+# ArchLinux Welcome App
+
 
 # Autotiling
 exec_always --no-startup-id autotiling
@@ -400,10 +412,10 @@ exec --no-startup-id volumeicon
 exec --no-startup-id conky -c ~/.config/i3/system-overview
 
 # feh sets wallpaper
-exec --no-startup-id feh --bg-fill /home/linuxpc/Dropbox/Fotos/Papel-de-parede/nord-japanese.png &
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#exec --no-startup-id feh --bg-fill /home/linuxpc/Dropbox/Fotos/Papel-de-parede/nord-japanese.png &
+#exec --no-startup-id feh --bg-fill  &
 # for other Arch Linux based distros
-# exec --no-startup-id feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
+# exec --no-startup-id feh --bg-fill  &
 
 # Polybar
 # exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -420,11 +432,6 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 # not workspace related
 
-# ArcoLinux Welcome App
-bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
-
-# ArchLinux Tweak Tool
-bindsym control+mod1+e exec --no-startup-id archlinux-tweak-tool
 
 # conky
 bindsym $mod+c exec --no-startup-id conky-toggle
@@ -460,8 +467,6 @@ bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 # bindsym $mod+m exec --no-startup-id pragha;focus
 
 # htop
-# arcolinux conflict
-# bindsym $mod+h exec --no-startup-id htop;focus
 
 # pavucontrol
 bindsym control+mod1+u exec --no-startup-id pavucontrol
@@ -525,7 +530,6 @@ bindsym control+mod1+s exec --no-startup-id spotify adblock;focus
 
 ################# screenshots                      
 
-bindsym Print exec --no-startup-id scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 bindsym Control+Print exec --no-startup-id xfce4-screenshooter
 bindsym Control+Shift+Print exec --no-startup-id gnome-screenshot -i
 bindsym $mod+Control+Print exec --no-startup-id flameshot gui
@@ -776,8 +780,7 @@ bar {
     # in order for the system trayicons to show up in polybar
 
     ##START THEMING BAR
-    # Theme name : ArcoLinux Default
-
+   
     # i3 bar colors
     # variable border background Text
 
