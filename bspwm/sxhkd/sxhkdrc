@@ -86,7 +86,7 @@ super + h
 
 #archlinux-logout
 super + x
-    /home/pclinux/.config/bspwm/scripts/powermenu.sh &
+    ~/.config/bspwm/scripts/powermenu.sh &
 
 #Rofi theme selector
 super + r
