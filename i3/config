@@ -168,7 +168,8 @@ mode "$mode_system" {
 
 # ArchLinux Logout
 bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
-bindsym $mod+X exec --no-startup-id archlinux-logout
+bindsym $mod+X exec --no-startup-id ~/.config/i3/scripts/powermenu.sh &
+
 
 ################# reload changed configuration     
 
@@ -402,8 +403,8 @@ exec_always --no-startup-id numlockx on
 # exec --no-startup-id pasystray
 exec --no-startup-id volumeicon
 
-# variety
-# exec --no-startup-id variety
+# nitrogen
+ exec --no-startup-id nitrogen --restore &
 
 # clipman
 # exec --no-startup-id xfce4-clipman
