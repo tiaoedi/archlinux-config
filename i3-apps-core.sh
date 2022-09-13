@@ -214,6 +214,7 @@ sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
+sudo pacman -S libappimage --needed keepassxc
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
