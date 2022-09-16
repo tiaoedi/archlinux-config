@@ -59,6 +59,7 @@ yay -S sublime-text-4 --noconfirm --needed
 yay -S betterlockscreen --noconfirm --needed 
 yay -S gsimplecal --noconfirm --needed 
 yay -S libappimage --noconfirm --needed
+yay -S Bluemail --noconfirm --needed
 
 sudo pacman -S gnome-weather --noconfirm --needed 
 
