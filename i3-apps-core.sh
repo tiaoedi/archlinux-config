@@ -205,6 +205,7 @@ sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
+sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
