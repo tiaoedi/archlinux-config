@@ -207,6 +207,7 @@ sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
+sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch   
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
@@ -217,7 +218,8 @@ sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
 sudo pacman -S --noconfirm --needed libappimage 
-sudo pacman -S --noconfirm --needed gufw  
+sudo pacman -S --noconfirm --needed gufw
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"

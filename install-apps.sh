@@ -60,6 +60,7 @@ yay -S betterlockscreen --noconfirm --needed
 yay -S gsimplecal --noconfirm --needed 
 yay -S libappimage --noconfirm --needed
 yay -S Bluemail --noconfirm --needed
+yay -S virtualbox-host-modules-arch --noconfirm --needed
 
 sudo pacman -S gnome-weather --noconfirm --needed 
 
