@@ -217,6 +217,7 @@ sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
 sudo pacman -S --noconfirm --needed libappimage
 sudo pacman -S --noconfirm --needed gufw 
+sudo pacman -S --noconfirm --needed audacity 
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
