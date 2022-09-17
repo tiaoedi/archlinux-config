@@ -61,6 +61,8 @@ yay -S gsimplecal --noconfirm --needed
 yay -S libappimage --noconfirm --needed
 yay -S Bluemail --noconfirm --needed
 yay -S virtualbox-host-modules-arch --noconfirm --needed
+yay -S fluent-icon-theme-git --noconfirm --needed
+yay -S surfn-icons-git --noconfirm --needed
 
 sudo pacman -S gnome-weather --noconfirm --needed 
 
