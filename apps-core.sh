@@ -220,6 +220,7 @@ sudo pacman -S --noconfirm --needed keepassxc
 sudo pacman -S --noconfirm --needed libappimage 
 sudo pacman -S --noconfirm --needed gufw
 sudo pacman -S --noconfirm --needed audacity 
+sudo pacman -S --noconfirm --needed rhythmbox
 
 ##############################################################################################
 
