@@ -86,7 +86,7 @@ super + h
 
 #archlinux-logout
 super + x
-    ~/.config/bspwm/scripts/powermenu.sh &
+    archlinux-logout
 
 #Rofi theme selector
 super + r
