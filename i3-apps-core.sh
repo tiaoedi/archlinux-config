@@ -209,6 +209,7 @@ sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
+sudo pacman -S --noconfirm --needed thunar-archive-plugin
 sudo pacman -S --noconfirm --needed mousepad
 sudo pacman -S --noconfirm --needed ristretto
 sudo pacman -S --noconfirm --needed nitrogen
@@ -219,6 +220,8 @@ sudo pacman -S --noconfirm --needed libappimage
 sudo pacman -S --noconfirm --needed gufw 
 sudo pacman -S --noconfirm --needed audacity 
 sudo pacman -S --noconfirm --needed rhythmbox
+sudo pacman -S --noconfirm --needed visual-studio-code-bin
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
