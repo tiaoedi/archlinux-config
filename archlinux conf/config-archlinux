@@ -33,6 +33,14 @@ dialog
 ::1             localhost
 127.0.1.1       archlinux-pclinux
 
+#mudar cursor
+sudo vim /usr/share/icons/default/index.theme
+
+#logalt
+yay betterlockscreen
+betterlockscreen -u Imagens/japones.jpg
+betterlockscreen -l --dim blur
+
 
 comando para trocar dns
 sudo vim /etc/resolv.conf 
@@ -92,7 +100,8 @@ sudo pacman -S fluent-
 sudo pacman -S graphite
 sudo pacman -S fluent-
 sudo pacman -S materia-
- sudo pacman -S orchis-
+sudo pacman -S orchis-
+yay sardi-icons
 
 #visualizador de imagens
  sudo pacman -S ristretto
@@ -108,8 +117,46 @@ https://fontawesome.com/v5/cheatsheet
 #resolução da tele
 xrandr -s 1920x1080
 
+#timeshift
+paru -S timeshift-bin timeshift-autosnap
+sudo timeshift --list
+sudo timeshift --restore
+
+#subline
+yay -S sublime-text-4
+
+#virtualbox
+virtualbox-host-modules-arch
+
+#thunar abrir pasta root
+pkexec thunar %f
+
+#remover pacman
+unlock
+
+#repositorios
+
+sudo vim /etc/pacman.conf
+
+[arcolinux_repo]
+SigLevel = Required DatabaseOptional
+Include = /etc/pacman.d/arcolinux-mirrorlist
+
+[arcolinux_repo_3party]
+SigLevel = Required DatabaseOptional
+Include = /etc/pacman.d/arcolinux-mirrorlist
+
+[arcolinux_repo_xlarge]
+SigLevel = Required DatabaseOptional
+Include = /etc/pacman.d/arcolinux-mirrorlist
 
 
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch
 
+#fixar keygen
+fixkeyz
+sudo pacman -Sy archlinux-keyring && sudo pacman -Syyu 
 
 
