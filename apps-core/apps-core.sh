@@ -21,35 +21,20 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
+sudo pacman -S yay --noconfirm --needed
+sudo pacman -S paru --noconfirm --needed
+
+sudo pacman -Syyu --noconfirm --needed
+
 #sudo pacman -S gdm --noconfirm --needed
 
 sudo pacman -S xorg-server xorg-apps --noconfirm --needed
 
 sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
 
-
-
-
 sudo pacman -S bspwm --noconfirm --needed
 sudo pacman -S sxhkd --noconfirm --needed
  
- cd
-git clone https://aur.archlinux.org/yay.git
- cd yay/
-echo "Instalando yay por favor aguarde!!!"
-  makepkg -si --noconfirm --needed 
-
-  cd
-yay -Syyu --noconfirm --needed 
-
-git clone https://aur.archlinux.org/paru.git
- cd paru/
-echo "Instalando paru por favor aguarde!!!!"
-makepkg -si --noconfirm --needed 
-
- cd
-paru -Syyu --noconfirm --needed 
-
 sudo pacman -Syyu --noconfirm --needed 
 sudo pacman -S flatpak --noconfirm --needed 
 sudo pacman -Syyu --noconfirm --needed 
@@ -226,7 +211,8 @@ sudo pacman -S --noconfirm --needed kvantum-qt5-git
 sudo pacman -S --noconfirm --needed kvantum-theme-arc
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed breeze
-sudo pacman -S qt5-base qt5-doc qt5-tools qtcreator --noconfirm --needed
+sudo pacman -S --noconfirm --needed qt5-base qt5-doc qt5-tools qtcreator
+sudo pacman -S --noconfirm --needed archlinux-logout-git
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
