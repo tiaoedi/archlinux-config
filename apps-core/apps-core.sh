@@ -213,6 +213,30 @@ sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed breeze
 sudo pacman -S --noconfirm --needed qt5-base qt5-doc qt5-tools qtcreator
 sudo pacman -S --noconfirm --needed archlinux-logout-git
+sudo pacman -S --noconfirm --needed volumeicon
+sudo pacman -S --noconfirm --needed timeshift-autosnap
+sudo pacman -S --noconfirm --needed dropbox
+sudo pacman -S --noconfirm --needed kdeconnect
+sudo pacman -S --noconfirm --needed hypnotix
+sudo pacman -S --noconfirm --needed steam
+sudo pacman -S --noconfirm --needed google-chrome
+sudo pacman -S --noconfirm --needed guvcview
+
+echo "Instalando Obs agurde!!!"
+sudo pacman -S obs-studio --noconfirm --needed
+
+echo "Instalando kdenlive agurde!!!"
+sudo pacman -S kdenlive --noconfirm --needed
+
+sudo pacman -S --noconfirm --needed stacer
+
+echo "Instalando libreoffice-fresh-pt-br agurde!!!"
+sudo pacman -S libreoffice-fresh-pt-br --noconfirm --needed
+sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
+sudo pacman -S gnome-weather --noconfirm --needed
+
+
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
@@ -234,6 +258,12 @@ cp sxhkdrc ~/.config/sxhkd/
 chmod +x ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/bspwm/bspwmrc
  cd 
+
+mkdir ~/Documentos/Videos-obs/
+
+mkdir ~/Documentos/Videos-kdenlive/
+
+echo "instalção concluida com sucesso!!!"
 
 echo
 tput setaf 2
