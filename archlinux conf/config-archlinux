@@ -159,4 +159,11 @@ Server = https://erikdubois.github.io/$repo/$arch
 fixkeyz
 sudo pacman -Sy archlinux-keyring && sudo pacman -Syyu 
 
+#kvantum
+Install qt5ct (sudo pacman -S qt5ct)
+You might want to install a Qt theme, that can be done by sudo pacman -S breeze for example.
+Edit /etc/environment as root by sudo nano /etc/environment and add the line QT_QPA_PLATFORMTHEME=qt5ct and save.
+
+
+
 
