@@ -221,19 +221,12 @@ sudo pacman -S --noconfirm --needed hypnotix
 sudo pacman -S --noconfirm --needed steam
 sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed guvcview
-
-echo "Instalando Obs agurde!!!"
-sudo pacman -S obs-studio --noconfirm --needed
-
-echo "Instalando kdenlive agurde!!!"
-sudo pacman -S kdenlive --noconfirm --needed
-
+sudo pacman -S --noconfirm --needed obs-studio
+sudo pacman -S --noconfirm --needed kdenlive
 sudo pacman -S --noconfirm --needed stacer
-
-echo "Instalando libreoffice-fresh-pt-br agurde!!!"
-sudo pacman -S libreoffice-fresh-pt-br --noconfirm --needed
+sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
-sudo pacman -S gnome-weather --noconfirm --needed
+sudo pacman -S --noconfirm --needed gnome-weather
 
 
 
@@ -250,13 +243,18 @@ sudo pacman -S gnome-weather --noconfirm --needed
   echo "################################################################"
 
  cd 
-mkdir ~/.config/bspwm
-mkdir ~/.config/sxhkd
+
+mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/sxhkd
+
  cd /usr/share/doc/bspwm/examples
+
 cp bspwmrc ~/.config/bspwm/
 cp sxhkdrc ~/.config/sxhkd/
+
 chmod +x ~/.config/sxhkd/sxhkdrc
 chmod +x ~/.config/bspwm/bspwmrc
+ 
  cd 
 
 mkdir ~/Documentos/Videos-obs/
