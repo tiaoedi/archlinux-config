@@ -220,6 +220,7 @@ sudo pacman -S --noconfirm --needed kdeconnect
 sudo pacman -S --noconfirm --needed hypnotix
 sudo pacman -S --noconfirm --needed steam
 sudo pacman -S --noconfirm --needed google-chrome
+sudo pacman -S --noconfirm --needed brave
 sudo pacman -S --noconfirm --needed guvcview
 sudo pacman -S --noconfirm --needed obs-studio
 sudo pacman -S --noconfirm --needed kdenlive
@@ -227,9 +228,6 @@ sudo pacman -S --noconfirm --needed stacer
 sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
 sudo pacman -S --noconfirm --needed gnome-weather
-
-
-
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
@@ -257,9 +255,6 @@ chmod +x ~/.config/bspwm/bspwmrc
  
  cd 
 
-mkdir ~/Documentos/Videos-obs/
-
-mkdir ~/Documentos/Videos-kdenlive/
 
 echo "instalção concluida com sucesso!!!"
 
