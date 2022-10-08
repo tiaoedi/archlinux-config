@@ -225,6 +225,11 @@ sudo pacman -S --noconfirm --needed kvantum-theme-arc
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed breeze
 sudo pacman -S qt5-base qt5-doc qt5-tools qtcreator --noconfirm --needed
+sudo pacman -S --noconfirm --needed clipgrab
+sudo pacman -S --noconfirm --needed xfce4-power-manager
+sudo pacman -S --noconfirm --needed thunar-volman
+sudo pacman -S --noconfirm --needed xfce4-notifyd
+sudo pacman -S --noconfirm --needed xfce4-appfinder
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"

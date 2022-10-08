@@ -224,10 +224,15 @@ sudo pacman -S --noconfirm --needed brave
 sudo pacman -S --noconfirm --needed guvcview
 sudo pacman -S --noconfirm --needed obs-studio
 sudo pacman -S --noconfirm --needed kdenlive
+sudo pacman -S --noconfirm --needed clipgrab
 sudo pacman -S --noconfirm --needed stacer
 sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
 sudo pacman -S --noconfirm --needed gnome-weather
+sudo pacman -S --noconfirm --needed xfce4-power-manager
+sudo pacman -S --noconfirm --needed thunar-volman
+sudo pacman -S --noconfirm --needed xfce4-notifyd
+sudo pacman -S --noconfirm --needed xfce4-appfinder
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
