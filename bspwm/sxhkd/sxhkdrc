@@ -68,9 +68,9 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#Tirar print
 super + e
-    atom
+  flameshot gui  
 
 #Browser
 super + w
