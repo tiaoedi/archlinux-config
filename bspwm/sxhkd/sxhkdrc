@@ -82,7 +82,7 @@ super + c
 
 #Htop
 super + h
-    urxvt 'htop task manager' -e htop
+    xfce4-taskmanager
 
 #archlinux-logout
 super + x
