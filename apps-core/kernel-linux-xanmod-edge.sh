@@ -19,6 +19,7 @@ echo "################################################################"
 tput sgr0
 echo
 
+sudo pacman -Syyu --noconfirm --needed 
 sudo pacman -S --noconfirm --needed linux-xanmod-edge 
 sudo pacman -S --noconfirm --needed linux-xanmod-edge-headers
 
