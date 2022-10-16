@@ -238,7 +238,7 @@ sudo pacman -S --noconfirm --needed xfce4-appfinder
 sudo pacman -S --noconfirm --needed xfce4-taskmanager
 sudo pacman -S --noconfirm --needed xfce4-screensaver
 sudo pacman -S --noconfirm --needed polybar
-
+sudo pacman -S --noconfirm --needed yad
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
