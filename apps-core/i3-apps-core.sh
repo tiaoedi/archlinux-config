@@ -230,6 +230,12 @@ sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed thunar-volman
 sudo pacman -S --noconfirm --needed xfce4-notifyd
 sudo pacman -S --noconfirm --needed xfce4-appfinder
+sudo pacman -S --noconfirm --needed xfce4-taskmanager
+sudo pacman -S --noconfirm --needed xfce4-screensaver
+sudo pacman -S --noconfirm --needed linux-xanmod-edge 
+sudo pacman -S --noconfirm --needed linux-xanmod-edge-headers
+sudo pacman -S --noconfirm --needed yad
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"

@@ -192,7 +192,9 @@ sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
-sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch   
+sudo pacman -S --noconfirm --needed virtualbox-host-dkms
+#sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch
+
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed thunar-archive-plugin
@@ -233,6 +235,10 @@ sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed thunar-volman
 sudo pacman -S --noconfirm --needed xfce4-notifyd
 sudo pacman -S --noconfirm --needed xfce4-appfinder
+sudo pacman -S --noconfirm --needed xfce4-taskmanager
+sudo pacman -S --noconfirm --needed xfce4-screensaver
+sudo pacman -S --noconfirm --needed polybar
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
