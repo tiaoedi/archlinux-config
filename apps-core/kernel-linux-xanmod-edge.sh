@@ -22,6 +22,8 @@ echo
 sudo pacman -Syyu --noconfirm --needed 
 sudo pacman -S --noconfirm --needed linux-xanmod-edge 
 sudo pacman -S --noconfirm --needed linux-xanmod-edge-headers
+sudo pacman -S --noconfirm --needed linux-xanmod
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
 
 
 echo

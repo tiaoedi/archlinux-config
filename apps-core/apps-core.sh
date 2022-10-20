@@ -129,6 +129,7 @@ sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed sparklines-git
 sudo pacman -S --noconfirm --needed speedtest-cli-git
 sudo pacman -S --noconfirm --needed spotify
+sudo pacman -S --noconfirm --needed spotify-adblock-git 
 sudo pacman -S --noconfirm --needed squashfs-tools
 sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed surfn-icons-git
@@ -239,6 +240,9 @@ sudo pacman -S --noconfirm --needed xfce4-taskmanager
 sudo pacman -S --noconfirm --needed xfce4-screensaver
 sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed yad
+sudo pacman -S --noconfirm --needed grub-btrfs
+sudo pacman -S --noconfirm --needed gsimplecal
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
