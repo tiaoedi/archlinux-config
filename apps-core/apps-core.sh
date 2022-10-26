@@ -194,7 +194,7 @@ sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
 sudo pacman -S --noconfirm --needed virtualbox-host-dkms
-#sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch
+sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch
 
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
@@ -242,6 +242,7 @@ sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed yad
 sudo pacman -S --noconfirm --needed grub-btrfs
 sudo pacman -S --noconfirm --needed gsimplecal
+sudo pacman -S --noconfirm --needed vimix-cursors
 
 ##############################################################################################
 
