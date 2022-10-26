@@ -298,7 +298,7 @@ type = custom/text
 content = "    "
 content-foreground = #c3f61f
 content-background = #00000000
-click-left = archlinux-logout
+click-left = archlinux-logout &
 click-right = 
 
 
@@ -377,6 +377,35 @@ click-left = flameshot gui &
 ;; click-right = xfce4-screenshooter &
 click-right = gnome-screenshot -i &
 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume>
+format-volume-background = #00000000
+format-volume-foreground = #c3f61f
+label-volume = VOL %percentage%%
+label-volume-foreground = ${color.foreground}
+
+label-muted =  muted
+label-muted-foreground = #888
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${color.foreground-alt}
 
 
 ################################################################################
@@ -1430,3 +1459,202 @@ label-empty-foreground = ${colors.foreground}
 label-empty-padding = 2
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+
+
+
+
+################################################################################
+################################################################################
+############                         MAINBAR-I3                     ############
+################################################################################
+################################################################################
+
+[bar/mainbar-i3]
+;https://github.com/jaagr/polybar/wiki/Configuration
+
+monitor = ${env:MONITOR}
+;monitor-fallback = HDMI1
+monitor-strict = false
+override-redirect = false
+bottom = false
+fixed-center = true
+width = 100%
+height = 30
+;offset-x = 1%
+;offset-y = 1%
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+;background-0 =
+
+radius = 0.0
+line-size = 2
+line-color = #000000
+
+border-size = 0
+;border-left-size = 25
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = #000000
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 3
+module-margin-right = 3
+
+;https://github.com/jaagr/polybar/wiki/Fonts
+font-0 = "Noto Sans:size=10;0"
+font-1 = "FontAwesome:size=10;0"
+font-2 = "Noto Sans:size=10;0"
+font-3 = "Noto Sans Mono:size=10;0"
+
+modules-left = menu ewmh hypnotix firefox google explorer discord gsimplecal  telegram spotify evolution weather screenshot
+modules-center = xwindow 
+modules-right = cpu-graph memory2  date powermenu pulseaudio
+
+separator = |
+
+;dim-value = 1.0
+
+tray-detached = false
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 2
+tray-maxsize = 20
+tray-scale = 1.0
+tray-position = right
+tray-background = ${colors.background}
+
+#i3: Make the bar appear below windows
+;wm-restack = i3
+;override-redirect = true
+
+; Enable support for inter-process messaging
+; See the Messaging wiki page for more details.
+enable-ipc = true
+
+; Fallback click handlers that will be called if
+; there's no matching module handler found.
+click-left =
+click-middle =
+click-right =
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+double-click-left =
+double-click-middle =
+double-click-right =
+
+; Requires polybar to be built with xcursor support (xcb-util-cursor)
+; Possible values are:
+; - default   : The default pointer as before, can also be an empty string (default)
+; - pointer   : Typically in the form of a hand
+; - ns-resize : Up and down arrows, can be used to indicate scrolling
+cursor-click =
+cursor-scroll =
+
+
+################################################################################
+################################################################################
+############                         MAINBAR-I3-EXTRA               ############
+################################################################################
+################################################################################
+
+[bar/mainbar-i3-extra]
+;https://github.com/jaagr/polybar/wiki/Configuration
+
+monitor = ${env:MONITOR}
+;monitor-fallback = HDMI1
+monitor-strict = false
+override-redirect = false
+bottom = true
+fixed-center = true
+width = 100%
+height = 30
+;offset-x = 1%
+;offset-y = 1%
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Background gradient (vertical steps)
+;   background-[0-9]+ = #aarrggbb
+;background-0 =
+
+radius = 0.0
+line-size = 2
+line-color = #000000
+
+border-size = 0
+;border-left-size = 25
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = #000000
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 3
+module-margin-right = 3
+
+;https://github.com/jaagr/polybar/wiki/Fonts
+font-0 = "Noto Sans:size=10;0"
+font-1 = "FontAwesome:size=10;0"
+font-2 = "Noto Sans:size=10;0"
+font-3 = "Noto Sans Mono:size=10;0"
+
+modules-left = load-average
+modules-center = networkspeeddown networkspeedup
+modules-right = filesystem
+
+separator = |
+
+;dim-value = 1.0
+
+;tray-detached = false
+;tray-offset-x = 0
+;tray-offset-y = 0
+;tray-padding = 2
+;tray-maxsize = 20
+;tray-scale = 1.0
+;tray-position = right
+;tray-background = ${colors.background}
+
+#i3: Make the bar appear below windows
+;wm-restack = i3
+;override-redirect = true
+
+; Enable support for inter-process messaging
+; See the Messaging wiki page for more details.
+enable-ipc = true
+
+; Fallback click handlers that will be called if
+; there's no matching module handler found.
+click-left =
+click-middle =
+click-right =
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+double-click-left =
+double-click-middle =
+double-click-right =
+
+; Requires polybar to be built with xcursor support (xcb-util-cursor)
+; Possible values are:
+; - default   : The default pointer as before, can also be an empty string (default)
+; - pointer   : Typically in the form of a hand
+; - ns-resize : Up and down arrows, can be used to indicate scrolling
+cursor-click =
+cursor-scroll =
+
+
+
+
+
+
