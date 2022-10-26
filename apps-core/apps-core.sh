@@ -26,6 +26,7 @@ sudo pacman -S paru --noconfirm --needed
 
 sudo pacman -Syyu --noconfirm --needed
 
+
 #sudo pacman -S gdm --noconfirm --needed
 
 sudo pacman -S xorg-server xorg-apps --noconfirm --needed
@@ -194,8 +195,7 @@ sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
 sudo pacman -S --noconfirm --needed virtualbox-host-dkms
-sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch
-
+#sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed thunar-archive-plugin

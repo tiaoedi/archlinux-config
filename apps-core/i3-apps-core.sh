@@ -222,8 +222,8 @@ sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
-sudo pacman -S --noconfirm --needed libappimage
-sudo pacman -S --noconfirm --needed gufw 
+sudo pacman -S --noconfirm --needed libappimage 
+sudo pacman -S --noconfirm --needed gufw
 sudo pacman -S --noconfirm --needed audacity 
 sudo pacman -S --noconfirm --needed rhythmbox
 sudo pacman -S --noconfirm --needed visual-studio-code-bin
@@ -231,8 +231,24 @@ sudo pacman -S --noconfirm --needed kvantum-qt5-git
 sudo pacman -S --noconfirm --needed kvantum-theme-arc
 sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed breeze
-sudo pacman -S qt5-base qt5-doc qt5-tools qtcreator --noconfirm --needed
+sudo pacman -S --noconfirm --needed qt5-base qt5-doc qt5-tools qtcreator
+sudo pacman -S --noconfirm --needed archlinux-logout-git
+sudo pacman -S --noconfirm --needed volumeicon
+sudo pacman -S --noconfirm --needed timeshift-autosnap
+sudo pacman -S --noconfirm --needed dropbox
+sudo pacman -S --noconfirm --needed kdeconnect
+sudo pacman -S --noconfirm --needed hypnotix
+sudo pacman -S --noconfirm --needed steam
+sudo pacman -S --noconfirm --needed google-chrome
+sudo pacman -S --noconfirm --needed brave
+sudo pacman -S --noconfirm --needed guvcview
+sudo pacman -S --noconfirm --needed obs-studio
+sudo pacman -S --noconfirm --needed kdenlive
 sudo pacman -S --noconfirm --needed clipgrab
+sudo pacman -S --noconfirm --needed stacer
+sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
+sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
+sudo pacman -S --noconfirm --needed gnome-weather
 sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed thunar-volman
 sudo pacman -S --noconfirm --needed xfce4-notifyd
