@@ -21,6 +21,12 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
+sudo pacman -S yay --noconfirm --needed
+sudo pacman -S paru --noconfirm --needed
+
+sudo pacman -Syyu --noconfirm --needed
+
+
 #sudo pacman -S gdm --noconfirm --needed
 
 sudo pacman -S xorg-server xorg-apps --noconfirm --needed
@@ -28,25 +34,24 @@ sudo pacman -S xorg-server xorg-apps --noconfirm --needed
 sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
 
 
-
 sudo pacman -S i3 --noconfirm --needed
  
- cd
-git clone https://aur.archlinux.org/yay.git
- cd yay/
-echo "Instalando yay por favor aguarde!!!"
-  makepkg -si --noconfirm --needed 
+ #cd
+#git clone https://aur.archlinux.org/yay.git
+ #cd yay/
+#echo "Instalando yay por favor aguarde!!!"
+ # makepkg -si --noconfirm --needed 
 
-  cd
-yay -Syyu --noconfirm --needed 
+  #cd
+#yay -Syyu --noconfirm --needed 
 
-git clone https://aur.archlinux.org/paru.git
- cd paru/
-echo "Instalando paru por favor aguarde!!!!"
-makepkg -si --noconfirm --needed 
+#git clone https://aur.archlinux.org/paru.git
+ #cd paru/
+#echo "Instalando paru por favor aguarde!!!!"
+#makepkg -si --noconfirm --needed 
 
- cd
-paru -Syyu --noconfirm --needed 
+ #cd
+#paru -Syyu --noconfirm --needed 
 
 sudo pacman -Syyu --noconfirm --needed 
 sudo pacman -S flatpak --noconfirm --needed 
