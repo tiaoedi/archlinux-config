@@ -140,7 +140,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left =  menu  bspwm  hypnotix firefox google explorer discord gsimplecal  telegram spotify evolution weather screenshot
 modules-center = xwindow
-modules-right = cpu-graph memory2 date powermenu
+modules-right = cpu-graph memory2 date powermenu pulseaudio
 
 
 
