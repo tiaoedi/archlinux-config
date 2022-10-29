@@ -384,7 +384,7 @@ type = internal/pulseaudio
 format-volume = <label-volume>
 format-volume-background = #00000000
 format-volume-foreground = #c3f61f
-label-volume = VOL %percentage%%
+label-volume =  %percentage%% 
 label-volume-foreground = ${color.foreground}
 
 label-muted =  muted
@@ -406,6 +406,8 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${color.foreground-alt}
+
+
 
 
 ################################################################################
@@ -1466,7 +1468,7 @@ format-background = ${colors.background}
 
 ################################################################################
 ################################################################################
-############                         MAINBAR-I3                     ############
+############                         MEU-I3-PERSONALIZADO !!!       ############
 ################################################################################
 ################################################################################
 
@@ -1510,7 +1512,7 @@ module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=10;0"
+font-1 = "FontAwesome:size=12;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
