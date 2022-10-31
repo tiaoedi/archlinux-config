@@ -141,7 +141,7 @@ bindsym mod1+F3 exec --no-startup-id xfce4-appfinder
 # bindsym mod1+F5 exec --no-startup-id xlunch --config ~/.config/xlunch/default.conf --input ~/.config/xlunch/entries.dsv
 
 # start rofi full
-bindsym $mod+F11 exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 100%;height: 100%;}' -show drun"
+bindsym $mod+F11 exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 100%;height: 100%;}' -show drun -show-icons"
 
 # start rofi small
 bindsym $mod+F12 exec --no-startup-id rofi -show drun -show-icons
@@ -384,7 +384,7 @@ exec --no-startup-id pamac-tray
 
 # volume
 # exec --no-startup-id pasystray
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 
 
 # bluetooth
