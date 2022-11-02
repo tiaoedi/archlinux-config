@@ -243,6 +243,7 @@ sudo pacman -S --noconfirm --needed yad
 sudo pacman -S --noconfirm --needed grub-btrfs
 sudo pacman -S --noconfirm --needed gsimplecal
 sudo pacman -S --noconfirm --needed vimix-cursors
+sudo pacman -S --noconfirm --needed qogir-gtk-theme-git  
 
 ##############################################################################################
 
