@@ -339,7 +339,7 @@ content-padding = 1
 content-foreground = #00c9f3
 content-background =  #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left =   gnome-weather &
+click-left = gnome-weather &
 click-right = killall  gnome-weather
 
 [module/menu]
@@ -356,7 +356,7 @@ click-right = killall  &
 
 [module/discord]
 type = custom/text
-content = 
+content =  
 content-padding = 1
 ;content-margin = 1
 content-foreground = #c3f61f
@@ -406,6 +406,12 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${color.foreground-alt}
+
+
+
+
+
+
 
 
 
@@ -1512,12 +1518,12 @@ module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=12;0"
+font-1 = "FontAwesome:size=13;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
-modules-left = menu ewmh hypnotix firefox google explorer discord gsimplecal  telegram spotify evolution weather screenshot
-modules-center = xwindow 
+modules-left = menu ewmh hypnotix firefox google explorer discord gsimplecal  telegram spotify evolution weather screenshot 
+modules-center = xwindow
 modules-right = cpu-graph memory2  date powermenu pulseaudio
 
 separator = |
