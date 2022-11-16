@@ -25,7 +25,7 @@ sudo pacman -S yay --noconfirm --needed
 sudo pacman -S paru --noconfirm --needed
 
 sudo pacman -Syyu --noconfirm --needed
-
+sudo pacman -Syyu --noconfirm --needed xf86-video-intel
 
 #sudo pacman -S gdm --noconfirm --needed
 
@@ -210,8 +210,8 @@ sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
-sudo pacman -S --noconfirm --needed virtualbox
-sudo pacman -S --noconfirm --needed virtualbox-host-dkms
+#sudo pacman -S --noconfirm --needed virtualbox
+#sudo pacman -S --noconfirm --needed virtualbox-host-dkms
 #sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
@@ -262,6 +262,9 @@ sudo pacman -S --noconfirm --needed gsimplecal
 sudo pacman -S --noconfirm --needed vimix-cursors
 sudo pacman -S --noconfirm --needed qogir-gtk-theme-git  
 sudo pacman -S --noconfirm --needed endeavour
+sudo pacman -S --noconfirm --needed sardi-colora-variations-icons-git
+
+
 ##############################################################################################
 
   echo "Instalando apps aguarde!!!!"
