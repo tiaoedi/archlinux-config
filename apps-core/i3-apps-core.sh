@@ -25,7 +25,19 @@ sudo pacman -S yay --noconfirm --needed
 sudo pacman -S paru --noconfirm --needed
 
 sudo pacman -Syyu --noconfirm --needed
-sudo pacman -Syyu --noconfirm --needed xf86-video-intel
+
+sudo pacman -S --noconfirm --needed xf86-video-intel
+sudo pacman -S --noconfirm --needed  mesa-demos  
+sudo pacman -S --noconfirm --needed  mesa-utils 
+sudo pacman -S --noconfirm --needed  mesa-vdpau
+sudo pacman -S --noconfirm --needed vulkan-extra-layers  
+sudo pacman -S --noconfirm --needed vulkan-headers            
+sudo pacman -S --noconfirm --needed vulkan-mesa-layers        
+sudo pacman -S --noconfirm --needed vulkan-swrast            
+sudo pacman -S --noconfirm --needed vulkan-validation-layers
+sudo pacman -S --noconfirm --needed vulkan-html-docs          
+sudo pacman -S --noconfirm --needed vulkan-intel              
+sudo pacman -S --noconfirm --needed vulkan-radeon             
 
 #sudo pacman -S gdm --noconfirm --needed
 
