@@ -249,7 +249,7 @@ sudo pacman -S --noconfirm --needed volumeicon
 sudo pacman -S --noconfirm --needed timeshift-autosnap
 sudo pacman -S --noconfirm --needed dropbox
 sudo pacman -S --noconfirm --needed kdeconnect
-sudo pacman -S --noconfirm --needed hypnotix
+#sudo pacman -S --noconfirm --needed hypnotix
 sudo pacman -S --noconfirm --needed steam
 sudo pacman -S --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed brave
