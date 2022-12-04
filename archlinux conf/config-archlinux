@@ -8,17 +8,18 @@ sudo pacman -S lightdm lightdm-gtk-greeter
 
 sudo pacman -S xfce4 xfce4-goodies 
 
+sudo pacman -Rdd xfce4
 
 traduzir archlinux
 1 
-nano /etc/locale.gen
+vim /etc/locale.gen
 2
-nano /etc/locale-gen
+locale-gen
 3
-locale.conf
+vim /etc/locale.conf
 LANG=pt_BR.UTF-8
 4
-nano /etc/vconsole.conf
+vim /etc/vconsole.conf
 KEYMAP=br-abnt2
 5
 nano /etc/hosts
@@ -43,6 +44,7 @@ betterlockscreen -l --dim blur
 
 
 comando para trocar dns
+sudo vim /etc/resolv.conf 
 sudo vim /etc/resolv.conf 
 chattr +i /etc/resolv.conf
 chattr -i /etc/resolv.conf
@@ -164,6 +166,12 @@ Install qt5ct (sudo pacman -S qt5ct)
 You might want to install a Qt theme, that can be done by sudo pacman -S breeze for example.
 Edit /etc/environment as root by sudo nano /etc/environment and add the line QT_QPA_PLATFORMTHEME=qt5ct and save.
 
+#virtualbox 6
+git clone https://aur.archlinux.org/virtualbox-bin.git
 
+#wallpaper
+https://wallpaperset.com/
 
+#comando resolver dependencias
+sudo pacman -Syyu --overwrite "*"
 
