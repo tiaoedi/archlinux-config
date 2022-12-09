@@ -25,7 +25,19 @@ sudo pacman -S yay --noconfirm --needed
 sudo pacman -S paru --noconfirm --needed
 
 sudo pacman -Syyu --noconfirm --needed
-
+sudo pacman -S --noconfirm --needed xf86-video-intel
+sudo pacman -S --noconfirm --needed  mesa-demos  
+sudo pacman -S --noconfirm --needed  mesa-utils 
+sudo pacman -S --noconfirm --needed  mesa-vdpau
+sudo pacman -S --noconfirm --needed vulkan-extra-layers  
+sudo pacman -S --noconfirm --needed vulkan-headers            
+sudo pacman -S --noconfirm --needed vulkan-mesa-layers        
+sudo pacman -S --noconfirm --needed vulkan-swrast            
+sudo pacman -S --noconfirm --needed vulkan-validation-layers
+sudo pacman -S --noconfirm --needed vulkan-html-docs          
+sudo pacman -S --noconfirm --needed vulkan-intel              
+sudo pacman -S --noconfirm --needed vulkan-radeon             
+sudo pacman -S --noconfirm --needed pipewire-audio
 
 #sudo pacman -S gdm --noconfirm --needed
 
@@ -194,8 +206,8 @@ sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed virtualbox
-sudo pacman -S --noconfirm --needed virtualbox-host-dkms
-#sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
+#sudo pacman -S --noconfirm --needed virtualbox-host-dkms
+sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
 sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed thunar-archive-plugin
@@ -244,7 +256,10 @@ sudo pacman -S --noconfirm --needed grub-btrfs
 sudo pacman -S --noconfirm --needed gsimplecal
 sudo pacman -S --noconfirm --needed vimix-cursors
 sudo pacman -S --noconfirm --needed qogir-gtk-theme-git 
-sudo pacman -S --noconfirm --needed endeavour 
+sudo pacman -S --noconfirm --needed endeavour
+sudo pacman -S --noconfirm --needed sardi-colora-variations-icons-git
+
+
 
 ##############################################################################################
 
