@@ -8,8 +8,8 @@ static const unsigned int default_border = 0;   /* to switch back to default bor
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
-static const unsigned int gappoh    = 10;       /* horiz outer gap between windows and screen edge */
-static const unsigned int gappov    = 10;       /* vert outer gap between windows and screen edge */
+static const unsigned int gappoh    = 5;       //* horiz outer gap between windows and screen edge */
+static const unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
@@ -28,6 +28,9 @@ static const int scalepreview       = 4;
 static const int tag_preview        = 1;        /* 1 means enable, 0 is off */
 static const int colorfultag        = 1;        /* 0 means use SchemeSel for selected non vacant tag */
 
+static const char col_gray1[]       = "#aa000000";
+static const char col_cyan[]        = "#aa000000";
+
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
@@ -35,7 +38,7 @@ static const char *fonts[]          = {"fontawesome:size=12" ,"fontawesome:size=
                                         "fontawesome:size=12" };
 
 // theme
-#include "themes/gruvchad.h"
+#include "themes/onedark.h"
 //#include "themes/catppuccin.h"
 //#include "themes/nord.h"
 //#include "themes/gruvchad.h"
@@ -72,8 +75,9 @@ static char *tags[] = {"", "", "", "", "", "", "", "", "
 //static char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" };
 //static char *tags[] = {"一", "二", "三", "四", "五", "六", "七", "八", "九"};
 
-static const char* gnomeweather[] = { "gnome-weather",  NULL };
+//static const char* gnomeweather[] = { "gnome-weather",  NULL };
 static const char* thunar[] = { "thunar",  NULL };
+static const char* flameshot[] = { "flameshot",  NULL };
 static const char* discord[] = { "discord", "open" , "discord", NULL };
 static const char* telegram[] = { "telegram-desktop", "open" , "telegram-desktop", NULL };
 static const char* thunderbird[] = { "thunderbird",  NULL};
@@ -83,12 +87,13 @@ static const char* archlinuxlogout[] = { "archlinux-logout", NULL };
 static const Launcher launchers[] = {
     /* command     name to display */
     { hypnotix,        "" },
+    { flameshot,       "" },
     { thunar,          "" },
     { discord,         "" },
     { telegram,        "" },
     { thunderbird,     "" },
-    { gnomeweather,    " " },
-    { archlinuxlogout, " " },
+    //{ gnomeweather,    " " },
+    { archlinuxlogout, " ", "color=#d0f607" },
 };
 
 static const int tagschemes[] = {
