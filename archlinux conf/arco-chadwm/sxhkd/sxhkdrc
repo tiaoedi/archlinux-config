@@ -106,7 +106,10 @@ super + Escape
 #alacritty
 super + KP_Enter
 	alacritty
-
+#volume
+super + d
+  volumeicon
+  
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
