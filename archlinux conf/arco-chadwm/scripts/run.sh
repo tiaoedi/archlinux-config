@@ -30,7 +30,7 @@ run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 picom -b  --config ~/.config/arco-chadwm/picom/picom.conf &
 run "numlockx on"
-run volumeicon &
+run "volumeicon" &
 sxhkd -c ~/.config/arco-chadwm/sxhkd/sxhkdrc &
 run nitrogen --restore
 run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
@@ -49,7 +49,7 @@ run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
 
 xset led 3 &
 run kdeconnect-indicator &
-run dropbox &
+run "dropbox"
 #run "insync start"
 #run "spotify"
 #run "ckb-next -b"
@@ -59,3 +59,5 @@ run dropbox &
 pkill bar.sh
 ~/.config/arco-chadwm/scripts/bar.sh &
 while type chadwm >/dev/null; do chadwm && continue || break; done
+
+
