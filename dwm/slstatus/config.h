@@ -65,7 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "%s ", "~/.config/dwm/weather.py" },
+	{ run_command, "%s ", "curl -s wttr.in/Guarulhos\?format\=1" },
     { cpu_perc, "| CPU %s% | ", NULL },
     { ram_used, "RAM %s | ", NULL },
     { datetime, "%s |", " %d/%m/%y %H:%M" }
