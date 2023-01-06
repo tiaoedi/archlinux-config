@@ -36,6 +36,8 @@ dialog
 
 #mudar cursor
 sudo vim /usr/share/icons/default/index.theme
+sudo pacman -Rdd adwaita-cursors
+
 
 #logalt
 yay betterlockscreen
@@ -174,4 +176,9 @@ https://wallpaperset.com/
 
 #comando resolver dependencias
 sudo pacman -Syyu --overwrite "*"
+
+weather
+curl -s wttr.in/Guarulhos\?format\=1
+#fonte
+JetBrainsMono Nerd Font:size=9
 
