@@ -15,7 +15,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {"Nerd Fonts:size=8"};
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#0B021B";
+static const char col_gray1[]       = "#220854";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
