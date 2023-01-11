@@ -10,20 +10,23 @@ run blueberry-tray
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 picom -b  --config ~/.config/dwm/picom.conf &
 numlockx on
-run volumeicon &
+volumeicon &
 sxhkd -c ~/.config/dwm/sxhkdrc &
 nitrogen --restore
 
 ~/.config/dwm/slstatus/slstatus &
 xset led 3 &
 kdeconnect-indicator &
-dropbox &
+xset r rate 300 50 &
+xset s off &
+xset -dpms &
+#dropbox &
 #run "insync start"
 #run "spotify"
 #run "ckb-next -b"
 #run "discord"
 #run "telegram-desktop"
+#loop
 
-#
 #
 #
