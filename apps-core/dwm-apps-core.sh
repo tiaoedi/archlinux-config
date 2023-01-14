@@ -31,7 +31,7 @@ echo "Instalando yay por favor aguarde!!!"
   cd
 yay -Syyu --noconfirm --needed 
 
-sudo pacman -S dwm --noconfirm --needed
+sudo yay -S dwm --noconfirm --needed
 sudo pacman -S sxhkd --noconfirm --needed
 
 sudo pacman -Syyu --noconfirm --needed
