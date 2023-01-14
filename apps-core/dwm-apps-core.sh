@@ -22,6 +22,7 @@ echo
 sudo pacman -Syyu --noconfirm --needed
 
  cd
+ cd /tmp
 git clone https://aur.archlinux.org/yay.git
  cd yay/
 echo "Instalando yay por favor aguarde!!!"
@@ -30,8 +31,8 @@ echo "Instalando yay por favor aguarde!!!"
   cd
 yay -Syyu --noconfirm --needed 
 
-sudo pacman -S yay --noconfirm --needed
-yay -S dwm --noconfirm --needed
+sudo pacman -S dwm --noconfirm --needed
+sudo pacman -S sxhkd --noconfirm --needed
 
 sudo pacman -Syyu --noconfirm --needed
 sudo pacman -S --noconfirm --needed xf86-video-intel
