@@ -1,9 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
 
-/* appearance */
-
-static const char *fonts[]          = {"fontawesome:size=12"};
 
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
@@ -70,10 +67,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "  %s ", "curl -s https://wttr.in/Guarulhos\?format\=1" },
+	{ run_command, " 🌤️ %s ", "~/.config/dwm/scrips/wetather_guar.sh" },
     { cpu_perc, "| 🖥️ cpu %s% | ", NULL },
-    { ram_used, " 🗳️ ram %s | ", NULL },
-    { datetime, "🕑 %s |", " %d %b %Y, %a %H:%M " },
-    { run_command, "   %s ", "~/.config/dwm/scrips/volume.sh" }
+    { ram_used, " 🗳️  ram %s | ", NULL },
+    { datetime, " 🕑 %s |", " %d %b %Y, %a %H:%M " },
+    { run_command, " 🔊  %s ", "~/.config/dwm/scrips/volume.sh" }
     
 };
