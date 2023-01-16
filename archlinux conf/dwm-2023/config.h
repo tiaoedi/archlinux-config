@@ -13,7 +13,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"Nerd Fonts:size=10"};
+static const char *fonts[]          = {"SymbolaRegular:size=10:autohint=true:antialias=true" , "NotoColorEmoji:pixelsize=11:antialias=true:autohint=true"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#0B021B";
 static const char col_gray2[]       = "#444444";
@@ -27,7 +27,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+//static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static char *tags[] = { "✔️", "🔥" , "📩", "⚙️", "🏠" , "📽️", "🖥️", "📂", "📻 " };
 
 static const unsigned int ulinepad	= 5;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 2;	/* thickness / height of the underline */
@@ -73,6 +74,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "alacritty", NULL };
 #include "movestack.c"
 #include "selfrestart.c"
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
