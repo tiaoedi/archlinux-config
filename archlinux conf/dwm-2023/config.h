@@ -28,7 +28,8 @@ static const char *colors[][3]      = {
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static char *tags[] = { "✔️", "🔥" , "📩", "⚙️", "🏠" , "📽️", "🖥️", "📂", "📻 " };
+static char *tags[] = { "1️⃣", "2️⃣" , "3️⃣", "4️⃣", "5️⃣" , "6️⃣", "7️⃣", "8️⃣", "9️⃣ " };
+//static char *tags[] = { "✔️", "🔥" , "📩", "⚙️", "🏠" , "📽️", "🖥️", "📂", "📻 " };
 
 static const unsigned int ulinepad	= 5;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 2;	/* thickness / height of the underline */
