@@ -67,10 +67,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, " 🌤️ %s ", "~/.config/dwm/scrips/wetather_guar.sh" },
+	{ run_command, " 🌤️ %s | ", "~/.config/dwm/scrips/wetather_guar.sh" },
+    { run_command, " 📥  %s ", "~/.config/dwm/scrips/upd.sh" },
     { cpu_perc, "| 🖥️ cpu %s% | ", NULL },
     { ram_used, " 🗳️  ram %s | ", NULL },
-    { datetime, " 🕑 %s |", " %d %b %Y, %a %H:%M " },
+    { datetime, " 🕑 %s |", " %d %B  %Y  %H:%M " },
     { run_command, " 🔊  %s ", "~/.config/dwm/scrips/volume.sh" }
     
 };
