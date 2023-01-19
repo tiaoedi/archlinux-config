@@ -253,6 +253,9 @@ static void updatebarpos(Monitor *m);
 static void updatebars(void);
 static void updateclientlist(void);
 static int updategeom(void);
+
+static void togglefullscr(const Arg *arg);
+
 static void updatenumlockmask(void);
 static void updatesizehints(Client *c);
 static void updatestatus(void);
@@ -1943,6 +1946,13 @@ togglefloating(const Arg *arg)
 			selmon->sel->w, selmon->sel->h, 0);
 	arrange(selmon);
 }
+
+
+void togglefullscr(const Arg *arg) {
+  if (selmon->sel)
+    setfullscreen(selmon->sel, !selmon->sel->isfullscreen);
+}
+
 
 void
 toggletag(const Arg *arg)
