@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+
+
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
 
@@ -65,7 +67,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
-
+	{ run_command, " 🌤️ %s | ", "~/.config/dwm/scrips/wetather_guar.sh" },
+    { run_command, " 📥 arch  %s ", "~/.config/dwm/scrips/upd.sh" },
+    { cpu_perc, "| 🖥️ cpu %s% | ", NULL },
+    { ram_used, " 🗳️  ram %s | ", NULL },
+    { datetime, " 🕑 %s |", " %d - %m - %Y - %H:%M " },
+    { run_command, " 🔊  %s ", "~/.config/dwm/scrips/volume.sh" },
     
 };
