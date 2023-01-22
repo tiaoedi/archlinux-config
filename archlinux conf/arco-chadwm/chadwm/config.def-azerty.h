@@ -8,8 +8,8 @@ static const unsigned int default_border = 0;   /* to switch back to default bor
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
-static const unsigned int gappoh    = 5;       //* horiz outer gap between windows and screen edge */
-static const unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
+static const unsigned int gappoh    = 10;       /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov    = 10;       /* vert outer gap between windows and screen edge */
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
@@ -27,22 +27,24 @@ static const int horizpadtabo       = 15;
 static const int scalepreview       = 4;
 static const int tag_preview        = 1;        /* 1 means enable, 0 is off */
 static const int colorfultag        = 1;        /* 0 means use SchemeSel for selected non vacant tag */
-
-static const char col_gray1[]       = "#aa000000";
-static const char col_cyan[]        = "#aa000000";
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+static const char *light_up[] = {"/usr/bin/light", "-A", "5", NULL};
+static const char *light_down[] = {"/usr/bin/light", "-U", "5", NULL};
 
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]     =  {"Iosevka:style:medium:size=11" ,"JetBrainsMono Nerd Font Mono:style:medium:size=10",
-                                        "Material Design Icons Desktop:size=11" };
+static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font:style:medium:size=12",
+                                        "Material Design Icons Desktop:size=12" };
 
 // theme
-//#include "themes/onedark.h"
+#include "themes/onedark.h"
 //#include "themes/catppuccin.h"
 //#include "themes/nord.h"
 //#include "themes/gruvchad.h"
-#include "themes/dracula.h"
+//#include "themes/dracula.h"
 
 static const char *colors[][3]      = {
     /*                     fg       bg      border */
@@ -68,32 +70,26 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "", "" , "", "", ""};
+static char *tags[] = {"", "", "", "", "", "", "", "", ""};
 //static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 //static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 //static char *tags[] = { "", "", "", "", "", "", "", "", "" };
 //static char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" };
 //static char *tags[] = {"一", "二", "三", "四", "五", "六", "七", "八", "九"};
 
-//static const char* gnomeweather[] = { "gnome-weather",  NULL };
-static const char* thunar[] = { "thunar",  NULL };
-static const char* flameshot[] = { "flameshot",  NULL };
+static const char* eww[] = { "eww", "open" , "eww", NULL };
 static const char* discord[] = { "discord", "open" , "discord", NULL };
 static const char* telegram[] = { "telegram-desktop", "open" , "telegram-desktop", NULL };
-static const char* thunderbird[] = { "thunderbird",  NULL};
-static const char* hypnotix[] = { "hypnotix",  NULL };
-static const char* archlinuxlogout[] = { "archlinux-logout", NULL };
+static const char* mintstick[] = { "mintstick", "-m", "iso", NULL};
+static const char* pavucontrol[] = { "pavucontrol", NULL };
 
 static const Launcher launchers[] = {
     /* command     name to display */
-    { hypnotix,        "" },
-    { flameshot,       "" },
-    { thunar,          "" },
-    { discord,         "" },
-    { telegram,        "" },
-    { thunderbird,     "" },
-    //{ gnomeweather,    " " },
-    { archlinuxlogout, " ", "color=#d0f607" },
+    { eww,           "數" },
+    { discord,       "ﱲ" },
+    { telegram,      "" },
+    { mintstick,     "虜" },
+    { pavucontrol,   "墳" },
 };
 
 static const int tagschemes[] = {
@@ -161,6 +157,13 @@ static const Layout layouts[] = {
 
 static Key keys[] = {
     /* modifier                         key         function        argument */
+
+    // brightness and audio 
+    {0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol}},
+	{0,                       XF86XK_AudioMute, spawn, {.v = mutevol }},
+	{0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol}},
+	{0,				XF86XK_MonBrightnessUp,		spawn,	{.v = light_up}},
+	{0,				XF86XK_MonBrightnessDown,	spawn,	{.v = light_down}},
 
     // screenshot fullscreen and cropped
     {MODKEY|ControlMask,                XK_u,       spawn,
@@ -257,26 +260,26 @@ static Key keys[] = {
 
     // qwerty keyboard
 
-    TAGKEYS(                            XK_1,                       0)
-    TAGKEYS(                            XK_2,                       1)
-    TAGKEYS(                            XK_3,                       2)
-    TAGKEYS(                            XK_4,                       3)
-    TAGKEYS(                            XK_5,                       4)
-    TAGKEYS(                            XK_6,                       5)
-    TAGKEYS(                            XK_7,                       6)
-    TAGKEYS(                            XK_8,                       7)
-    TAGKEYS(                            XK_9,                       8)
+    //TAGKEYS(                            XK_1,                       0)
+    //TAGKEYS(                            XK_2,                       1)
+    //TAGKEYS(                            XK_3,                       2)
+    //TAGKEYS(                            XK_4,                       3)
+    //TAGKEYS(                            XK_5,                       4)
+    //TAGKEYS(                            XK_6,                       5)
+    //TAGKEYS(                            XK_7,                       6)
+    //TAGKEYS(                            XK_8,                       7)
+    //TAGKEYS(                            XK_9,                       8)
 
     // azerty keyboard (Belgium)
-    // TAGKEYS(                               XK_ampersand,                0)
-    // TAGKEYS(                               XK_eacute,                   1)
-    // TAGKEYS(                               XK_quotedbl,                 2)
-    // TAGKEYS(                               XK_apostrophe,               3)
-    // TAGKEYS(                               XK_parenleft,                4)
-    // TAGKEYS(                               XK_section,                  5)
-    // TAGKEYS(                               XK_egrave,                   6)
-    // TAGKEYS(                               XK_exclam,                   7)
-    // TAGKEYS(                               XK_ccedilla,                 8)
+    TAGKEYS(                               XK_ampersand,                0)
+    TAGKEYS(                               XK_eacute,                   1)
+    TAGKEYS(                               XK_quotedbl,                 2)
+    TAGKEYS(                               XK_apostrophe,               3)
+    TAGKEYS(                               XK_parenleft,                4)
+    TAGKEYS(                               XK_section,                  5)
+    TAGKEYS(                               XK_egrave,                   6)
+    TAGKEYS(                               XK_exclam,                   7)
+    TAGKEYS(                               XK_ccedilla,                 8)
 
 };
 

@@ -34,15 +34,15 @@ static const char col_cyan[]        = "#aa000000";
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"fontawesome:size=12" ,"fontawesome:size=12",
-                                        "fontawesome:size=12" };
+static const char *fonts[]     =  {"Iosevka:style:medium:size=11" ,"JetBrainsMono Nerd Font Mono:style:medium:size=10",
+                                        "Material Design Icons Desktop:size=11" };
 
 // theme
-#include "themes/onedark.h"
+//#include "themes/onedark.h"
 //#include "themes/catppuccin.h"
 //#include "themes/nord.h"
 //#include "themes/gruvchad.h"
-//#include "themes/dracula.h"
+#include "themes/dracula.h"
 
 static const char *colors[][3]      = {
     /*                     fg       bg      border */
@@ -68,7 +68,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "", "" , "", "", ""};
+static char *tags[] = { "", "" , "", "", ""};
 //static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 //static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 //static char *tags[] = { "", "", "", "", "", "", "", "", "" };
