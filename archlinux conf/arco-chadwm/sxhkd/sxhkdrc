@@ -106,9 +106,17 @@ super + Escape
 #alacritty
 super + KP_Enter
 	alacritty
-#volume
-super + d
-  volumeicon
+#volume+
+super + a
+  ~/.config/dwm/scrips/volume+.sh
+
+#volume-
+super + s
+  ~/.config/dwm/scrips/volume-.sh
+
+
+
+
   
 #################################################################
 # SUPER + SHIFT KEYS
