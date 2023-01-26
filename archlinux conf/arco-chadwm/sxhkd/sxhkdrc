@@ -108,13 +108,17 @@ super + KP_Enter
 	alacritty
 #volume+
 super + a
-  ~/.config/dwm/scrips/volume+.sh
+  pactl set-sink-volume 0 +5%
+
 
 #volume-
 super + s
-  ~/.config/dwm/scrips/volume-.sh
+  pactl set-sink-volume 0 -5%
 
 
+#volume multe
+super + n
+  pactl set-sink-mute 0 toggle
 
 
   
