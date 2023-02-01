@@ -181,4 +181,13 @@ weather
 curl -s wttr.in/Guarulhos\?format\=1
 #fonte
 JetBrainsMono Nerd Font:size=9
+Nerd Fonts:size=10
 
+#void linux ablitar serviço
+sudo ln -s /etc/sv/ufw /var/service
+
+#descompactar tar gz
+tar xvf
+
+#install Nvim
+bash install.sh --install
