@@ -26,16 +26,16 @@ cpu() {
 #}
 
 upd() {
-  printf "^c$green^ ^b$black^ arch "
+  printf "^c$green^ ^b$black^arch "
   printf "^c$green^^b$black^$(/home/archpc/.config/arco-chadwm/scripts/upd.sh)"
 }
 
 
 
-brightness() {
-  printf "^c$red^   "
-  printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
-}
+#brightness() {
+ # printf "^c$red^   "
+  #printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
+#}
 
 mem() {
   printf "^c$blue^^b$black^  "
@@ -43,9 +43,9 @@ mem() {
 }
 
 wlan() {
-	case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
-	up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Connected" ;;
-	down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Disconnected" ;;
+	case "$(cat /sys/class/net/enp3s0*/operstate 2>/dev/null)" in
+	up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Con" ;;
+	down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Dis" ;;
 	esac
 }
 
