@@ -6,18 +6,35 @@
 interval=0
 
 # load colors
-. ~/.config/chadwm/scripts/bar_themes/dracula
+. ~/.config/arco-chadwm/scripts/bar_themes/dracula
 
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$black^ ^b$green^ CPU"
-  printf "^c$white^ ^b$grey^ $cpu_val"
+  printf "^c$white^ ^b$black^ CPU"
+  printf "^c$white^ ^b$black^ $cpu_val"
 }
 
-arch() {
-  printf "^c$green^ ^b$black^arch"
-  printf "^c$green^^b$black^ $(/home/pcarch/.config/chadwm/scripts/upd.sh)"
+#pkg_updates() {
+ # updates=$(checkupdates | wc -l)   # arch
+
+  #if [ -z "$updates" ]; then
+   # printf " ^c$green^  Fully Updated"
+  #else
+   # printf " ^c$green^  $updates"" arch"
+  #fi
+#}
+
+upd() {
+  printf "^c$green^ ^b$black^ arch "
+  printf "^c$green^^b$black^$(/home/archpc/.config/arco-chadwm/scripts/upd.sh)"
+}
+
+
+
+brightness() {
+  printf "^c$red^   "
+  printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
 }
 
 mem() {
@@ -25,26 +42,33 @@ mem() {
   printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
-clock() {
-	printf "^c$black^ ^b$darkblue^🕑"
-	printf "^c$black^^b$blue^ $(date '+%d-%m-%Y - %H:%M')"
+wlan() {
+	case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
+	up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Connected" ;;
+	down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Disconnected" ;;
+	esac
+}
+
+
+volume() {
+  printf "^c$blue^ ^b$black^ 🔊 "
+  printf "^c$blue^^b$black^$(~/.config/arco-chadwm/scripts/volume.sh)"
 }
 
 weather() {
   printf "^c$blue^ ^b$black^🌤️"
-  printf "^c$blue^^b$black^$(/home/pcarch/.config/chadwm/scripts/wetather_guar.sh)"
+  printf "^c$blue^^b$black^$(/home/archpc/.config/arco-chadwm/scripts/tem.py)"
 }
 
-volume() {
-  printf "^c$blue^ ^b$black^   "
-  printf "^c$blue^^b$black^ $(~/.config/chadwm/scripts/volume.sh)"
+clock() {
+	printf "^c$black^ ^b$blue^  "
+	printf "^c$black^^b$blue^ $(date '+%d/%m/%y %H:%M')  "
 }
-
 
 while true; do
 
   [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
   interval=$((interval + 1))
 
-  sleep 1 && xsetroot -name "$(weather) $(arch) $updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock) $(volume)"
+  sleep 2 && xsetroot -name " $(weather) $(upd)$updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock) $(volume)"
 done
