@@ -15,8 +15,8 @@
 
 import requests
 
-CITY = "3461786"
-API_KEY = "756edce7e9d4c385ef9499a53492678c"
+CITY = "3448439"
+API_KEY = "5bed31ea4e60683c92c8e43bf0fd0976"
 UNITS = "Metric"
 UNIT_KEY = "C"
 #UNIT_KEY = "F"
@@ -30,7 +30,7 @@ try:
     if REQ.status_code == 200:
         CURRENT = REQ.json()["weather"][0]["description"].capitalize()
         TEMP = int(float(REQ.json()["main"]["temp"]))
-        print("{}, {} °{}".format(CURRENT, TEMP, UNIT_KEY))
+        print("{},{} °{}".format(CURRENT, TEMP, UNIT_KEY))
     else:
         print("Error: BAD HTTP STATUS CODE " + str(REQ.status_code))
 except (ValueError, IOError):
