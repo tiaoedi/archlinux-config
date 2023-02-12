@@ -1,0 +1,28 @@
+--- dwm.c
++++ dwm.c
+@@ -28,8 +28,6 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <unistd.h>
+-#include <limits.h>
+-#include <stdint.h>
+ #include <sys/types.h>
+ #include <sys/wait.h>
+ #include <X11/cursorfont.h>
+@@ -62,7 +60,7 @@
+ /* enums */
+ enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
+ enum { SchemeNorm, SchemeSel }; /* color schemes */
+-enum { NetSupported, NetWMName, NetWMIcon, NetWMState, NetWMCheck,
++enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
+        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
+        NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
+ enum { WMProtocols, WMDelete, WMState, WMTakeFocus, WMLast }; /* default atoms */
+@@ -171,7 +168,6 @@ static void focus(Client *c);
+ static void focusin(XEvent *e);
+ static void focusmon(const Arg *arg);
+ static void focusstack(const Arg *arg);
+-static Picture geticonprop(Window w, unsigned int *icw, unsigned int *ich);
+ static int getrootptr(int *x, int *y);
+ static long getstate(Window w);
+ static int gettextprop(Window w, Atom atom, char *text, unsigned int size);
