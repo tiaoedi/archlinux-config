@@ -42,9 +42,10 @@ sudo pacman -S --noconfirm --needed pipewire-audio
 
 #sudo pacman -S gdm --noconfirm --needed
 
+sudo pacman -S sddm --noconfirm --needed
 sudo pacman -S xorg-server xorg-apps --noconfirm --needed
 
-sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
+#sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
 
 
 sudo pacman -S i3 --noconfirm --needed
@@ -74,6 +75,7 @@ sudo pacman -Syyu --noconfirm --needed
 #sudo pacman -S --noconfirm --needed wps-office-mime
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
+sudo pacman -S --noconfirm --needed noto-fonts-emoji
 sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed alacritty-themes
 sudo pacman -S --noconfirm --needed arandr
@@ -193,8 +195,8 @@ sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 #sudo systemctl enable gdm 
-
-sudo systemctl enable lightdm.service
+sudo systemctl enable sddm
+#sudo systemctl enable lightdm.service
 
 sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
 sudo pacman -S --noconfirm --needed bluez
@@ -247,6 +249,7 @@ sudo pacman -S --noconfirm --needed breeze
 sudo pacman -S --noconfirm --needed qt5-base qt5-doc qt5-tools qtcreator
 sudo pacman -S --noconfirm --needed archlinux-logout-git
 sudo pacman -S --noconfirm --needed volumeicon
+sudo pacman -S --noconfirm --needed pa-applet-git
 sudo pacman -S --noconfirm --needed timeshift-autosnap
 sudo pacman -S --noconfirm --needed dropbox
 sudo pacman -S --noconfirm --needed kdeconnect
@@ -273,9 +276,12 @@ sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed grub-btrfs
 sudo pacman -S --noconfirm --needed gsimplecal
 sudo pacman -S --noconfirm --needed vimix-cursors
-sudo pacman -S --noconfirm --needed qogir-gtk-theme-git  
+sudo pacman -S --noconfirm --needed qogir-gtk-theme-git 
+sudo pacman -S --noconfirm --needed dracula-gtk-theme 
 sudo pacman -S --noconfirm --needed endeavour
 sudo pacman -S --noconfirm --needed sardi-colora-variations-icons-git
+sudo pacman -S --noconfirm --needed arcolinux-chadwm-git
+sudo pacman -S --noconfirm --needed albert
 
 
 ##############################################################################################
