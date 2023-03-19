@@ -41,7 +41,7 @@ sudo xbps-install -S mpv mlocate
 sudo xbps-install -S lxappearance 
 sudo xbps-install -S lm_sensors
 sudo xbps-install -S libxcvt libxcb
-sudo xbps-install -S  leafpad go
+sudo xbps-install -S leafpad go
 sudo xbps-install -S font-inconsolata-otf
 sudo xbps-install -S flatpak
 sudo xbps-install -S firefox feh expat
@@ -49,7 +49,10 @@ sudo xbps-install -S dunst dejavu-fonts-ttf dbus
 sudo xbps-install -S curl cargo btop wget
 sudo xbps-install -S alsa-tools alsa-utils
 sudo xbps-install -S alsa-plugins-pulseaudio
-sudo xbps-install -S alacritty kid3 
+sudo xbps-install -S alacritty 
+sudo xbps-install -S albert
+sudo xbps-install -S kid3 
+
 
 sudo xbps-install -S xorg-server xorg-apps 
 sudo xbps-install -S lightdm lightdm-gtk-greeter
