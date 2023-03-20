@@ -52,7 +52,7 @@ sudo xbps-install -S alsa-plugins-pulseaudio
 sudo xbps-install -S alacritty 
 sudo xbps-install -S albert
 sudo xbps-install -S kid3 
-
+sudo xbps-install -S powerline
 
 sudo xbps-install -S xorg-server xorg-apps 
 sudo xbps-install -S lightdm lightdm-gtk-greeter

@@ -282,7 +282,7 @@ sudo pacman -S --noconfirm --needed endeavour
 sudo pacman -S --noconfirm --needed sardi-colora-variations-icons-git
 sudo pacman -S --noconfirm --needed arcolinux-chadwm-git
 sudo pacman -S --noconfirm --needed albert
-
+sudo pacman -S --noconfirm --needed powerline
 
 ##############################################################################################
 
