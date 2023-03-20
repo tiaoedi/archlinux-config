@@ -5,7 +5,9 @@ xset r rate 300 50 &
 xset s off &
 xset -dpms &
 #xrandr -s 1920x1080 &
-run xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off &
+xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 & 
+
+
 
 pplet
 run pamac-tray
