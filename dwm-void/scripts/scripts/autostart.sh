@@ -8,7 +8,7 @@ xfce4-power-manager &
 #xrandr -s 1920x1080 &
 xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 & 
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/libexec/xfce-polkit &
 picom -b  --config ~/.config/dwm/picom.conf &
 numlockx on
 #volumeicon &
