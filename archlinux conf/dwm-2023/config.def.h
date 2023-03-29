@@ -3,6 +3,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
+
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 15;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -19,7 +20,7 @@ static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#eeeeee";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#ff79c6";
+static const char col_cyan[]        = "#2d3146";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -27,7 +28,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "-rch-", "" , "", "", ""};
+static char *tags[] = {  "-rch-", " ",  "",  "",  ""};
 //static const char *tags[] = { "-Arch-", "" , "", "", "" };
 //static char *tags[] = { "1️⃣", "2️⃣" , "3️⃣", "4️⃣", "5️⃣" , "6️⃣", "7️⃣", "8️⃣", "9️⃣ " };
 //static char *tags[] = { "✔️", "🔥" , "📩", "⚙️", "🏠" , "📽️", "🖥️", "📂", "📻 " };
