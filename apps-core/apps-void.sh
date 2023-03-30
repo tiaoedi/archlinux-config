@@ -56,11 +56,17 @@ sudo xbps-install -S pipewire
 sudo xbps-install -S xmirror
 sudo xbps-install -S ufw
 sudo xbps-install -S dropbox
-
+sudo xbps-install -S tumbler-4.18.0_1
+sudo xbps-install -S Thunar-4.18.4_1 
+sudo xbps-install -S xfce4-notifyd-0.6.4_1
+sudo xbps-install -S thunderbird
+sudo xbps-install -S ristretto
+sudo xbps-install -S xdg-user-dirs-0.18_1
+sudo xbps-install -S mtools-4.0.42_1 
 
 sudo xbps-install -S xorg-server xorg-apps 
 #sudo xbps-install -S lightdm lightdm-gtk-greeter
-sudo xbps-install -S sddm
+#sudo xbps-install -S sddm
 
 
 ###################
@@ -72,7 +78,7 @@ sudo ln -s /etc/sv/cgmanager /var/service/
 sudo ln -s /etc/sv/consolekit /var/service/
 sudo ln -s /etc/sv/polkitd /var/service/
 #sudo ln -s /etc/sv/lightdm /var/service/
-sudo ln -s /etc/sv/sddm /var/service/
+#sudo ln -s /etc/sv/sddm /var/service/
 sudo ln -s /etc/sv/pipewire /var/service/
 sudo ln -s /etc/sv/pipewire-pulse /var/service/
 sudo ln -s /etc/sv/ufw /var/service/
