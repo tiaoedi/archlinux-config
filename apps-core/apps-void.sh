@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo xbps-install -Su
-sudo xbps-install -S void-repo-multilib void-repo-nonfree void-repo-multilib-nonfree
+#sudo xbps-install -S void-repo-multilib void-repo-nonfree void-repo-multilib-nonfree
 sudo xbps-install -Su
 
 sudo xbps-install -S git make gcc                      
@@ -54,7 +54,8 @@ sudo xbps-install -S albert
 sudo xbps-install -S kid3 
 sudo xbps-install -S pipewire
 sudo xbps-install -S xmirror
-
+sudo xbps-install -S ufw
+sudo xbps-install -S dropbox
 
 
 sudo xbps-install -S xorg-server xorg-apps 
@@ -74,3 +75,7 @@ sudo ln -s /etc/sv/polkitd /var/service/
 sudo ln -s /etc/sv/sddm /var/service/
 sudo ln -s /etc/sv/pipewire /var/service/
 sudo ln -s /etc/sv/pipewire-pulse /var/service/
+sudo ln -s /etc/sv/ufw /var/service/
+#sudo ln -s /etc/sv/dhcpcd /var/service
+#sudo ln -s /etc/sv/dhcpcd-eth0 /var/service
+#sudo ln -s /etc/sv/wpa_supplicant /var/service
