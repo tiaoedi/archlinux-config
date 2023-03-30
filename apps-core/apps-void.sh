@@ -52,11 +52,14 @@ sudo xbps-install -S alsa-plugins-pulseaudio
 sudo xbps-install -S alacritty 
 sudo xbps-install -S albert
 sudo xbps-install -S kid3 
-sudo xbps-install -S powerline
+sudo xbps-install -S pipewire
+sudo xbps-install -S xmirror
+
+
 
 sudo xbps-install -S xorg-server xorg-apps 
-sudo xbps-install -S lightdm lightdm-gtk-greeter
-
+#sudo xbps-install -S lightdm lightdm-gtk-greeter
+sudo xbps-install -S sddm
 
 
 ###################
@@ -67,4 +70,7 @@ sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/cgmanager /var/service/
 sudo ln -s /etc/sv/consolekit /var/service/
 sudo ln -s /etc/sv/polkitd /var/service/
-sudo ln -s /etc/sv/lightdm lightdm-gtk-greeter /var/service/
+#sudo ln -s /etc/sv/lightdm /var/service/
+sudo ln -s /etc/sv/sddm /var/service/
+sudo ln -s /etc/sv/pipewire /var/service/
+sudo ln -s /etc/sv/pipewire-pulse /var/service/
