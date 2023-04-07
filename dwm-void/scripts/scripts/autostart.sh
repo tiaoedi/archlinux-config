@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pplet
+setxkbmap -layout br 
 run pamac-tray
 #run "variety"
 xfce4-power-manager &
@@ -17,24 +17,9 @@ nitrogen --restore
 ~/.config/dwm/slstatus/slstatus &
 xset led 3 &
 kdeconnect-indicator &
-xset r rate 300 50 &
+xset r rate 350 50 &
 xbacklight -set 35 &
 xset s off &
 xset -dpms &
 albert &
 ##dropbox &
-##run "insync start"
-##run "spotify"
-##run "ckb-next -b"
-##run "discord"
-##run "telegram-desktop"
-##loop
-
-
-
-
-
-
-
-
-
