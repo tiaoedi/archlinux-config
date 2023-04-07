@@ -67,12 +67,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, " 🌤️ %s | ", "~/.config/dwm/scripts/tem.py" },
-    { run_command, "  arch  %s ", "~/.config/dwm/scripts/upd.sh" },
+	{ run_command, " %s | ", "~/.config/dwm/scripts/tem.py" },
+    { run_command, " Void %s ", "~/.config/dwm/scripts/upd.sh" },
     { cpu_perc, "|  cpu %s% | ", NULL },
     { ram_used, "  ram %s | ", NULL },
     { datetime, "  %s |", " %d /%m /%Y - %H:%M " },
-    { run_command, " %s","~/.config/dwm/scripts/net.sh" },
     { run_command, "   %s ", "~/.config/dwm/scripts/volume.sh" },
     
 };
