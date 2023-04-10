@@ -14,7 +14,7 @@ numlockx on
 #volumeicon &
 sxhkd -c ~/.config/dwm/sxhkdrc &
 nitrogen --restore
-~/.config/dwm/slstatus/slstatus &
+slstatus &
 xset led 3 &
 kdeconnect-indicator &
 xset r rate 350 50 &
