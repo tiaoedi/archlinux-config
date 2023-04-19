@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo xbps-install -Syu
-#sudo xbps-install -S void-repo-multilib void-repo-nonfree void-repo-multilib-nonfree
+sudo xbps-install -S void-repo-multilib void-repo-nonfree void-repo-multilib-nonfree
 sudo xbps-install -Syu
 
 sudo xbps-install -Syu libX11 libXft pkg-config
@@ -82,7 +82,7 @@ sudo xbps-install -Syu obs
 
 
 
-sudo xbps-install -Syu xorg xorg-server xorg-apps 
+#sudo xbps-install -Syu xorg xorg-server xorg-apps 
 #sudo xbps-install -S lightdm lightdm-gtk-greeter
 #sudo xbps-install -S sddm
 
@@ -91,15 +91,15 @@ sudo xbps-install -Syu xorg xorg-server xorg-apps
 
 
 
-sudo ln -s /etc/sv/dbus /var/service
-sudo ln -s /etc/sv/cgmanager /var/service/
-sudo ln -s /etc/sv/consolekit /var/service/
-sudo ln -s /etc/sv/polkitd /var/service/
+#sudo ln -s /etc/sv/dbus /var/service
+#sudo ln -s /etc/sv/cgmanager /var/service/
+#sudo ln -s /etc/sv/consolekit /var/service/
+#sudo ln -s /etc/sv/polkitd /var/service/
 #sudo ln -s /etc/sv/lightdm /var/service/
 #sudo ln -s /etc/sv/sddm /var/service/
-sudo ln -s /etc/sv/pipewire /var/service/
-sudo ln -s /etc/sv/pipewire-pulse /var/service/
-sudo ln -s /etc/sv/ufw /var/service/
+#sudo ln -s /etc/sv/pipewire /var/service/
+#sudo ln -s /etc/sv/pipewire-pulse /var/service/
+#sudo ln -s /etc/sv/ufw /var/service/
 #sudo ln -s /etc/sv/dhcpcd /var/service
 #sudo ln -s /etc/sv/dhcpcd-eth0 /var/service
 #sudo ln -s /etc/sv/wpa_supplicant /var/service
