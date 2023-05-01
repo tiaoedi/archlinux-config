@@ -62,7 +62,7 @@ comando pra baixar videos
 flatpak install flathub org.gnome.Shotwell 
  
 add user
-useradd -m nome
+useradd -mG wheel nome
 passwd nome
 
  
@@ -187,7 +187,40 @@ Nerd Fonts:size=10
 sudo ln -s /etc/sv/ufw /var/service
 
 #descompactar tar gz
-tar xvf
+tar -zxvf
 
 #install Nvim
 bash install.sh --install
+
+#ip scan
+sudo arp-scan or -d
+
+#void-packages
+./xbps-src pkg tor
+xi 
+
+####Grub-teme
+svim /etc/default/grub
+GRUB_THEME="/boot/grub/themes/arch/theme.txt"
+
+
+#Void dwm
+https://www.youtube.com/watch?v=wzh_dKh3eps
+
+#sddm layout
+svim /usr/share/sddm/scripts/Xsetup
+setxkbmap -layout br
+ 
+#sddm themes
+svim /etc/sddm.conf
+[Theme]
+Current=/usr/share/sddm/themes/maldives
+
+
+
+#xbps-src
+./xbps-src bootstrap-update
+
+# numlockx
+/usr/bin/numlockx on
+
