@@ -130,7 +130,7 @@ module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=13;0"
+font-1 = "FontAwesome:size=12;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
@@ -138,9 +138,9 @@ font-3 = "Noto Sans Mono:size=10;0"
 ##############################################################################  
 
 
-modules-left =  menu  bspwm  hypnotix firefox google explorer discord gsimplecal  telegram spotify evolution weather screenshot
+modules-left =  menu  bspwm  hypnotix firefox google explorer discord telegram evolution
 modules-center = xwindow
-modules-right = cpu-graph memory2 date powermenu pulseaudio
+modules-right = temp arch-updates  cpu-graph memory2 date powermenu pulseaudio
 
 
 
@@ -199,34 +199,24 @@ content-padding = 1
 content-foreground = #c3f61f
 content-background =  #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left = hypnotix &
+click-left = hypnotix 
 click-right = killall hypnotix
 
 
 
 
-[module/gsimplecal]
-type = custom/text
-content =""
-content-padding = 1
-;content-margin = 1
-content-foreground = #21ff00
-content-background =  #00000000
-;content-underline = ${color.adapta-cyan}
-click-left = gsimplecal
-click-right = gsimplecal
 
 
 
 [module/google]
 type = custom/text
-content = 
+content = 
 content-padding = 1
 content-margin = 1
 content-foreground = #26a4e3
 content-background = #00000000
 content-underline = ${color.adapta-cyan}
-click-left = google-chrome-stable &
+click-left = google-chrome-stable 
 
 
 
@@ -239,7 +229,7 @@ content-margin = 1
 content-foreground = #21ff00
 content-background = #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left = thunar &
+click-left = thunar 
 click-right = killall thunar
 
 
@@ -251,21 +241,11 @@ content-padding = 1
 content-foreground = #f19832
 content-background =  #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left = firefox &
+click-left = firefox 
 click-right = killall firefox
 
 
 
-[module/telegram]
-type = custom/text
-content = 
-content-padding = 1
-;content-margin = 1
-content-foreground = #26a4e3
-content-background =  #00000000
-;content-underline = ${color.db-cyan}
-click-left = telegram-desktop &
-click-right = killall telegram-desktop &
 
 
 [module/spotify]
@@ -276,7 +256,7 @@ content-padding = 1
 content-foreground = #25c95e
 content-background =  #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left =  spotify adblock &
+click-left =  spotify adblock 
 click-right = killall  spotify adblock
 
 
@@ -288,7 +268,7 @@ content-padding = 1
 content-foreground = #d0f607
 content-background =  #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left = thunderbird &
+click-left = thunderbird 
 click-right = killall thunderbird
 
 
@@ -298,7 +278,7 @@ type = custom/text
 content = "    "
 content-foreground = #c3f61f
 content-background = #00000000
-click-left = archlinux-logout &
+click-left = archlinux-logout 
 click-right = 
 
 
@@ -331,51 +311,31 @@ format-underline =
 format-padding = 1
 
 
-[module/weather]
-type = custom/text
-content =  
-content-padding = 1
-;content-margin = 1
-content-foreground = #00c9f3
-content-background =  #00000000
-;content-underline = ${color.adapta-cyan}
-click-left = gnome-weather &
-click-right = killall  gnome-weather
 
 [module/menu]
 type = custom/text
-content =  Arch linux
+content ="  - rch-"
 content-padding = 1
 ;content-margin = 1
 content-foreground = #26a4e3
 content-background =  #00000000
 ;content-underline = ${color.db-cyan}
 click-left = exec rofi -theme launcher2.rasi -show drun -show-icons -lines 6 -columns 4
-click-right = killall  &
+click-right = killall  
 
 
 [module/discord]
 type = custom/text
-content =  
+content =  
 content-padding = 1
 ;content-margin = 1
 content-foreground = #c3f61f
 content-background = #00000000
 ;content-underline = ${color.adapta-cyan}
-click-left = discord &
+click-left = discord 
 click-right = killall Discord
 
-[module/screenshot]
-type = custom/text
-content-foreground = #c3f61f
-content-background = #00000000
-;content-overline = ${color.background}
-;content-underline = ${color.background}
-content-padding = 1
-content = 
-click-left = flameshot gui &
-;; click-right = xfce4-screenshooter &
-click-right = gnome-screenshot -i &
+
 
 
 [module/pulseaudio]
@@ -409,7 +369,16 @@ bar-volume-empty-foreground = ${color.foreground-alt}
 
 
 
-
+[module/temp]
+type = custom/script
+exec = ~/.config/bspwm/scripts/tem.py
+interval = 1
+label = %output%
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix = "  "
+format-prefix-foreground = #FFBB00
+format-underline = #FFBB00
 
 
 
@@ -429,15 +398,15 @@ enable-scroll = true
 reverse-scroll = true
 pin-workspaces = true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
 ws-icon-5 = 6;
 ws-icon-6 = 7;
 ws-icon-7 = 8;
-ws-icon-8 = 9;
+ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = ""
 
@@ -496,12 +465,12 @@ format-background = ${colors.background}
 
 [module/arch-updates]
 type = custom/script
-exec = ~/.config/polybar/scripts/check-arch-updates.sh
-interval = 1000
-label = Arch: %output%
+exec = ~/.config/bspwm/scripts/upd.sh
+interval = 1
+label = : %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
+format-prefix = " Arch "
 format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
 
@@ -940,7 +909,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Ram <label>
+format =   <label>
 ;format-prefix = "  "
 format-prefix-foreground = #3384d0
 format-underline = #3384d0
@@ -1056,8 +1025,8 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix-foreground = #738adb
 format-underline = #738adb
-click-right = pamac-manager &
-click-left = pamac-manager &
+click-right = pamac-manager 
+click-left = pamac-manager 
 format-prefix = " "
 
 ################################################################################
