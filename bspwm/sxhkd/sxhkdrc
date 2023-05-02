@@ -58,7 +58,7 @@ super + F10
 
 #Rofi Fullscreen
 super + F11
-    rofi -theme-str 'window \{width: 100%;height: 100%;\}' -show drun
+    rofi -theme launcher2.rasi -show drun -show-icons -lines 6 -columns 4
 
 #Rofi
 super + F12

@@ -38,13 +38,13 @@ else
   run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 fi
 
-#Some ways to set your wallpaper besides variety or nitrogen
-#feh --bg-scale ~/.config/bspwm/wall.png &
-#feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
-#feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
-#wallpaper for other Arch based systems
-#feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
-#feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
+xbacklight -set 55 &
+xset r rate 300 50 &
+xset s off &
+xset -dpms &
+xset led 3 &
+#xrandr -s 1920x1080 &
+xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 & 
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
@@ -52,22 +52,22 @@ xsetroot -cursor_name left_ptr &
 conky -c $HOME/.config/bspwm/system-overview &
 run kdeconnect-indicator &
 #run variety &
-run nm-applet &
+#run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
 /usr/bin/numlockx on 
 xset led 3 &
-blueberry-tray &
+#blueberry-tray &
 picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
-run volumeicon &
+albert &
 nitrogen --restore &
 #run caffeine &
 #run vivaldi-stable &
 #run firefox &
 #run thunar &
-run dropbox &
+#run dropbox &
 #run insync start &
 #run discord &
 #run spotify &
