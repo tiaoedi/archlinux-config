@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+
+
 export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 #Find all your wallpapers
@@ -7,17 +9,16 @@ DIR="/usr/share/backgrounds/*"
 #Select wallpaper at random
 SCREEN=$(ls $DIR/*.jpg | shuf -n1)
 
-
-THEME="$SCRIPTPATH/rofi/powermenu.rasi"
+THEME="$SCRIPTPATH/rofi/config1.rasi"
 
 rofi_command="rofi -no-config -theme $THEME"
 
 # Options
-shutdown="Shutdown"
-reboot="Restart"
-lock="Lock"
-suspend="Suspend"
-logout="Logout"
+shutdown="  Shutdown"
+reboot="  Restart"
+lock="  Lock"
+suspend="  Suspend"
+logout="  Logout"
 
 # Variable passed to rofi
 options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
@@ -48,3 +49,5 @@ case $chosen in
 esac
 
 rm $SCRIPTPATH/blurlock.png
+
+
