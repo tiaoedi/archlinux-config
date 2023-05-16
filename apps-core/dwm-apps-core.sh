@@ -21,15 +21,18 @@ echo
 
 sudo pacman -Syyu --noconfirm --needed
 
+
+ cd /tmp/
+git clone https://aur.archlinux.org/yay.git
+ cd yay/
+echo "Instalando yay por favor aguarde!!!"
+  makepkg -si --noconfirm --needed 
+  cd 
+yay -Syyu --noconfirm --needed 
+
  
 sudo pacman -Syyu --noconfirm --needed
 sudo pacman -S --noconfirm --needed xf86-video-intel
-
-
-
-
-#!/bin/bash
-#set -e
 
 ##################################################################################################################
 
