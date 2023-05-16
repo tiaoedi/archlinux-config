@@ -22,7 +22,7 @@ alias listdir="ls -d */ > list"
 
 
 
-PS1=' - \W$ >> ' 
+PS1=' - \W  ' 
 
 
 
@@ -76,6 +76,7 @@ alias svim='sudo nvim'
 
 alias ht='htop'
 alias nf='neofetch | lolcat'
+alias cm='cmatrix'
 
 #clear
 alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
@@ -99,6 +100,7 @@ alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.se
 alias togdm="sudo pacman -S gdm --noconfirm --needed ; sudo systemctl enable gdm.service -f ; echo 'Gdm is active - reboot now'"
 alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable lxdm.service -f ; echo 'Lxdm is active - reboot now'"
 
-
+#mirror
+alias mirror='svim /etc/pacman.conf'
 
 clean
