@@ -11,6 +11,29 @@
 ##################################################################################################################
 
 
+if grep -q arcolinux_repo /etc/pacman.conf; then
+
+  echo
+  tput setaf 2
+  echo "################################################################"
+  echo "################ ArcoLinux repos are already in /etc/pacman.conf "
+  echo "################################################################"
+  tput sgr0
+  echo
+  else
+  echo
+  tput setaf 2
+  echo "################################################################"
+  echo "################### Getting the keys and mirrors for ArcoLinux"
+  echo "################################################################"
+  tput sgr0
+  echo
+  sh get-the-keys-and-repos.sh*
+  sudo pacman -Sy
+fi
+
+
+
 echo
 tput setaf 2
 echo "################################################################"
@@ -19,20 +42,8 @@ echo "################################################################"
 tput sgr0
 echo
 
-sudo pacman -Syyu --noconfirm --needed
+ sudo pacman -Sy --noconfirm --needed
 
-
- cd /tmp/
-git clone https://aur.archlinux.org/yay.git
- cd yay/
-echo "Instalando yay por favor aguarde!!!"
-  makepkg -si --noconfirm --needed 
-  cd 
-yay -Syyu --noconfirm --needed 
-
- 
-sudo pacman -Syyu --noconfirm --needed
-sudo pacman -S --noconfirm --needed xf86-video-intel
 
 ##################################################################################################################
 
@@ -70,6 +81,7 @@ echo
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
+ sudo pacman -S --noconfirm --needed xf86-video-intel
 sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed dwm
 sudo pacman -S --noconfirm --needed sddm
