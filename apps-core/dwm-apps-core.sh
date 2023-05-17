@@ -53,12 +53,15 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
 echo "Deleting current /etc/pacman.d/mirrorlist and replacing with"
 echo
-echo "Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch
-Server = https://mirror.rackspace.com/archlinux/\$repo/os/\$arch
-Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch
-Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
-Server = http://mirror.osbeck.com/archlinux/\$repo/os/\$arch
-Server = https://geo.mirror.pkgbuild.com/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist
+echo "Server = http://br.mirror.archlinux-br.org/$repo/os/$arch
+Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
+Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
+Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
+Server = http://linorg.usp.br/archlinux/$repo/os/$arch
+Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch
+Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch
+Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
+Server = https://mirror.ufscar.br/archlinux/$repo/os/$arch" | sudo tee /etc/pacman.d/mirrorlist
 echo
 tput setaf 2
 echo "########################################################################"
