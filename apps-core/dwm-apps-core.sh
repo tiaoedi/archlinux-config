@@ -84,9 +84,11 @@ echo
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
- sudo pacman -S --noconfirm --needed xf86-video-intel
+sudo pacman -S --noconfirm --needed git
+sudo pacman -S --noconfirm --needed xf86-video-intel
 sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed dwm
+sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed sddm
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
@@ -127,7 +129,6 @@ sudo pacman -S --noconfirm --needed flameshot-git
 sudo pacman -S --noconfirm --needed font-manager
 sudo pacman -S --noconfirm --needed galculator
 sudo pacman -S --noconfirm --needed gimp
-sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed gitahead-bin
 sudo pacman -S --noconfirm --needed gitfiend
 sudo pacman -S --noconfirm --needed gnome-disk-utility
@@ -218,6 +219,28 @@ sudo pacman -S --noconfirm --needed yay-bin
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
+sudo pacman -S --noconfirm --needed obs-studio
+sudo pacman -S --noconfirm --needed kdenlive
+sudo pacman -S --noconfirm --needed clipgrab
+sudo pacman -S --noconfirm --needed stacer
+sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
+sudo pacman -S --noconfirm --needed grub-btrfs
+sudo pacman -S --noconfirm --needed timeshift-autosnap
+sudo pacman -S --noconfirm --needed vimix-cursors
+sudo pacman -S --noconfirm --needed powerline
+sudo pacman -S --noconfirm --needed guvcview
+sudo pacman -S --noconfirm --needed dropbox
+sudo pacman -S --noconfirm --needed kdeconnect
+sudo pacman -S --noconfirm --needed hypnotix
+#sudo pacman -S --noconfirm --needed steam
+sudo pacman -S --noconfirm --needed google-chrome
+sudo pacman -S --noconfirm --needed brave
+sudo pacman -S --noconfirm --needed thunderbird
+sudo pacman -S --noconfirm --needed keepassxc
+sudo pacman -S --noconfirm --needed ristretto
+sudo pacman -S --noconfirm --needed thunar
+sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
+sudo pacman -S --noconfirm --needed virtualbox
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 sudo systemctl enable sddm
@@ -260,10 +283,12 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
 
 fi
 
+sh inst-fonts.sh*
+
 echo
 tput setaf 6
 echo "################################################################"
-echo "################### Done"
+echo "################### Instalação concluida!!!!"
 echo "################################################################"
 tput sgr0
 echo
