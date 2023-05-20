@@ -1,7 +1,15 @@
 #!/bin/bash
 
 
-pplet
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+
+nm-applet &
 run pamac-tray
 #run "variety"
 xfce4-power-manager &
@@ -14,12 +22,14 @@ numlockx on
 sxhkd -c ~/.config/dwm/sxhkdrc &
 nitrogen --restore
 
-~/.config/dwm/slstatus/slstatus &
+slstatus &
+xbacklight -set 35 &
+xrandr --output HDMI2 --mode 1920x1080 &
 xset led 3 &
 kdeconnect-indicator &
-#xset r rate 300 50 &
-#xset s off &
-#xset -dpms &
+xset r rate 300 50 &
+xset s off &
+xset -dpms &
 dropbox &
 ##run "insync start"
 ##run "spotify"
@@ -27,12 +37,3 @@ dropbox &
 ##run "discord"
 ##run "telegram-desktop"
 ##loop
-
-
-
-
-
-
-
-
-
