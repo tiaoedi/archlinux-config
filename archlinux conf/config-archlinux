@@ -224,3 +224,6 @@ Current=/usr/share/sddm/themes/maldives
 # numlockx
 /usr/bin/numlockx on
 
+#datacenter
+https://ftp.belnet.be/arcolinux/
+
