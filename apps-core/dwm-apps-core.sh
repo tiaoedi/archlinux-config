@@ -11,6 +11,10 @@
 ##################################################################################################################
 
 
+sudo pacman -Syyu
+sudo pacman -S --noconfirm --needed git
+sudo pacman -S --noconfirm --needed wget
+
 if grep -q arcolinux_repo /etc/pacman.conf; then
 
   echo
@@ -29,7 +33,7 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
   tput sgr0
   echo
   sh get-the-keys-and-repos.sh*
-  sudo pacman -Sy
+  sudo pacman -Syyu
 fi
 
 
@@ -42,7 +46,7 @@ echo "################################################################"
 tput sgr0
 echo
 
- sudo pacman -Sy --noconfirm --needed
+ sudo pacman -Syyu --noconfirm --needed
 
 
 ##################################################################################################################
@@ -51,27 +55,10 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
 ##################################################################################################################
 
-echo "Deleting current /etc/pacman.d/mirrorlist and replacing with"
-echo
-echo "Server = http://br.mirror.archlinux-br.org/$repo/os/$arch
-Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
-Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
-Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
-Server = http://linorg.usp.br/archlinux/$repo/os/$arch
-Server = http://archlinux.pop-es.rnp.br/$repo/os/$arch
-Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch
-Server = http://mirror.ufscar.br/archlinux/$repo/os/$arch
-Server = https://mirror.ufscar.br/archlinux/$repo/os/$arch" | sudo tee /etc/pacman.d/mirrorlist
-echo
-tput setaf 2
-echo "########################################################################"
-echo "Arch Linux Servers have been written to /etc/pacman.d/mirrorlist"
-echo "Use nmirrorlist to inspect"
-echo "########################################################################"
-tput sgr0
-echo
 
-sudo pacman -Syy
+
+
+sudo pacman -Syyu
 
 echo
 tput setaf 2
@@ -84,7 +71,6 @@ echo
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
-sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed xf86-video-intel
 sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed dwm
