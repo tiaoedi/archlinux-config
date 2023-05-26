@@ -14,6 +14,7 @@
 sudo pacman -Syyu
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed wget
+sudo pacman -S --noconfirm --needed curl
 
 if grep -q arcolinux_repo /etc/pacman.conf; then
 
@@ -96,7 +97,6 @@ sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin
 sudo pacman -S --noconfirm --needed catfish
 sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed cpuid
-sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dconf-editor
 sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed dmenu
@@ -270,7 +270,7 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
 fi
 
 sh inst-fonts.sh*
-
+bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 echo
 tput setaf 6
 echo "################################################################"
