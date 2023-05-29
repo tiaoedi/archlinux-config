@@ -77,6 +77,7 @@ sudo pacman -S --noconfirm --needed xorg
 sudo pacman -S --noconfirm --needed dwm
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed sddm
+sudo pacman -S --noconfirm --needed neovim
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
 sudo pacman -S --noconfirm --needed alacritty
@@ -108,7 +109,7 @@ sudo pacman -S --noconfirm --needed evince
 sudo pacman -S --noconfirm --needed expac
 sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
-sudo pacman -S --noconfirm --needed firefox
+#sudo pacman -S --noconfirm --needed firefox
 #sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed flameshot-git
 #sudo pacman -S --noconfirm --needed fluent-icon-theme-git
@@ -127,11 +128,11 @@ sudo pacman -S --noconfirm --needed hardinfo-gtk3
 sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed hw-probe
-sudo pacman -S --noconfirm --needed inkscape
+#sudo pacman -S --noconfirm --needed inkscape
 #sudo pacman -S --noconfirm --needed insync
 sudo pacman -S --noconfirm --needed kvantum
 sudo pacman -S --noconfirm --needed linux-firmware-qlogic
-sudo pacman -S --noconfirm --needed lastpass
+#sudo pacman -S --noconfirm --needed lastpass
 sudo pacman -S --noconfirm --needed logrotate
 sudo pacman -S --noconfirm --needed lolcat
 sudo pacman -S --noconfirm --needed lshw
@@ -166,10 +167,10 @@ sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed scrot
 sudo pacman -S --noconfirm --needed sardi-icons
-sudo pacman -S --noconfirm --needed simplescreenrecorder
+#sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed sparklines-git
 sudo pacman -S --noconfirm --needed speedtest-cli-git
-sudo pacman -S --noconfirm --needed spotify
+#sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
 sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed surfn-icons-git
