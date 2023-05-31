@@ -232,6 +232,8 @@ sudo pacman -S --noconfirm --needed virtualbox
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 sudo systemctl enable sddm
+sudo ufw enable
+sudo systemctl enable ufw 
 
 
 #sudo pacman -S --noconfirm --needed rxvt-unicode
@@ -272,6 +274,7 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
 fi
 
 sh inst-fonts.sh*
+sh ufw-config.sh*
 #bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 echo
 tput setaf 6
