@@ -37,8 +37,6 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
   sudo pacman -Syyu
 fi
 
-
-
 echo
 tput setaf 2
 echo "################################################################"
@@ -55,9 +53,6 @@ echo
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
 ##################################################################################################################
-
-
-
 
 sudo pacman -Syyu
 
@@ -232,9 +227,21 @@ sudo pacman -S --noconfirm --needed virtualbox
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 sudo systemctl enable sddm
-sudo ufw enable
-sudo systemctl enable ufw 
 
+if ! command -v ufw &>/dev/null; then
+    echo "UFW não está instalado. Instalando..."
+    sudo pacman -Syu --noconfirm ufw
+fi
+
+if ! sudo ufw status | grep -q "Status: active"; then
+    echo "UFW não está ativo. Ativando..."
+    sudo ufw enable
+fi
+
+echo "UFW está instalado e ativado."
+
+sudo systemctl enable ufw 
+sh ufw-config.sh*
 
 #sudo pacman -S --noconfirm --needed rxvt-unicode
 #sudo pacman -S --noconfirm --needed urxvt-fullscreen
@@ -274,7 +281,7 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
 fi
 
 sh inst-fonts.sh*
-sh ufw-config.sh*
+
 #bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 echo
 tput setaf 6
