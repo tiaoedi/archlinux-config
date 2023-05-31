@@ -96,11 +96,12 @@ sudo pacman -S --noconfirm --needed bash-completion
 sudo pacman -S --noconfirm --needed bat
 sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin
 sudo pacman -S --noconfirm --needed catfish
-sudo pacman -S --noconfirm --needed chromium
+#sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed cpuid
 sudo pacman -S --noconfirm --needed dconf-editor
 sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed dmenu
+sudo pacman -S --noconfirm --needed ufw
 sudo pacman -S --noconfirm --needed downgrade
 if [ ! -f /usr/bin/duf ]; then
   sudo pacman -S --noconfirm --needed duf
@@ -233,10 +234,10 @@ sudo systemctl enable ntpd.service
 sudo systemctl enable sddm
 
 
-sudo pacman -S --noconfirm --needed rxvt-unicode
-sudo pacman -S --noconfirm --needed urxvt-fullscreen
-sudo pacman -S --noconfirm --needed urxvt-perls
-sudo pacman -S --noconfirm --needed urxvt-resize-font-git
+#sudo pacman -S --noconfirm --needed rxvt-unicode
+#sudo pacman -S --noconfirm --needed urxvt-fullscreen
+#sudo pacman -S --noconfirm --needed urxvt-perls
+#sudo pacman -S --noconfirm --needed urxvt-resize-font-git
 
 sudo pacman -S --noconfirm --needed gzip
 sudo pacman -S --noconfirm --needed p7zip
@@ -271,7 +272,7 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
 fi
 
 sh inst-fonts.sh*
-bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+#bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 echo
 tput setaf 6
 echo "################################################################"
