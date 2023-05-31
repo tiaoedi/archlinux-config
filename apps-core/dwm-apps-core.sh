@@ -69,7 +69,6 @@ echo
 #sudo pacman -S --noconfirm --needed wps-office-mime
 sudo pacman -S --noconfirm --needed xf86-video-intel
 sudo pacman -S --noconfirm --needed xorg
-sudo pacman -S --noconfirm --needed dwm
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed sddm
 sudo pacman -S --noconfirm --needed neovim
@@ -199,6 +198,8 @@ sudo pacman -S --noconfirm --needed xcolor
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed xorg-xkill
 sudo pacman -S --noconfirm --needed yay-bin
+sudo pacman -Syu
+yay -S --noconfirm --needed dwm
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
