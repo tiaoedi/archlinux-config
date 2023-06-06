@@ -16,44 +16,26 @@ sudo xbps-install -Syu ConsoleKit2
 sudo xbps-install -Syu elogind
 sudo xbps-install -Syu udisks2
 sudo xbps-install -Syu cgmanager 
-sudo xbps-install -Syu libgcc-32bit libdrm-32bit
-sudo xbps-install -Syu libX11-devel
-sudo xbps-install -Syu libglvnd-32bit
-sudo xbps-install -Syu libstdc++-32bit
-sudo xbps-install -Syu libXft-devel
-sudo xbps-install -Syu libXinerama-devel
 sudo xbps-install -Syu zsh zathura-pdf-mupdf
 sudo xbps-install -Syu xtools xrandr xprop
-sudo xbps-install -Syu xclip xcalc unzip
-sudo xbps-install -Syu transmission-gtk tar
-sudo xbps-install -Syu terminus-font
-sudo xbps-install -Syu shotwell
-sudo xbps-install -Syu scrot rofi
+sudo xbps-install -Syu unzip
+sudo xbps-install -Syu tar
+sudo xbps-install -Syu rofi
 sudo xbps-install -Syu qalculate
 sudo xbps-install -Syu picom
 sudo xbps-install -Syu pavucontrol
-sudo xbps-install -Syu pamixer
-sudo xbps-install -Syu pango
 sudo xbps-install -Syu numlockx
-sudo xbps-install -Syu noto-fonts-emoji
 sudo xbps-install -Syu nitrogen
 sudo xbps-install -Syu neofetch
-sudo xbps-install -Syu mpv mlocate
+sudo xbps-install -Syu mpv 
 sudo xbps-install -Syu lxappearance 
-sudo xbps-install -Syu lm_sensors
 sudo xbps-install -Syu libxcvt libxcb
-sudo xbps-install -Syu leafpad go
-sudo xbps-install -Syu font-inconsolata-otf
 sudo xbps-install -Syu flatpak
-sudo xbps-install -Syu firefox feh expat
+sudo xbps-install -Syu firefox 
 sudo xbps-install -Syu kdeconnect-22.12.1_2
-sudo xbps-install -Syu dunst dejavu-fonts-ttf dbus
-sudo xbps-install -Syu curl cargo btop wget
-sudo xbps-install -Syu alsa-tools alsa-utils
-sudo xbps-install -Syu alsa-plugins-pulseaudio
+sudo xbps-install -Syu dunst dbus
+sudo xbps-install -Syu curl wget
 sudo xbps-install -Syu alacritty 
-sudo xbps-install -Syu albert
-sudo xbps-install -Syu kid3 
 sudo xbps-install -Syu pipewire
 sudo xbps-install -Syu xmirror
 sudo xbps-install -Syu ufw
@@ -79,6 +61,7 @@ sudo xbps-install -Syu lolcat-c-1.4_1
 sudo xbps-install -Syu guvcview
 sudo xbps-install -Syu kdenlive
 sudo xbps-install -Syu obs
+sudo xbps-install -Syu arc-theme-20221218_1
 
 
 
