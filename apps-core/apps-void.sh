@@ -4,6 +4,7 @@ sudo xbps-install -Syu
 sudo xbps-install -S void-repo-multilib void-repo-nonfree void-repo-multilib-nonfree
 sudo xbps-install -Syu
 
+sudo xbps-install -Syu xorg
 sudo xbps-install -Syu alsa-tools alsa-utils alsa-plugins-pulseaudio
 sudo xbps-install -Syu libX11 libXft pkg-config
 sudo xbps-install -Syu git make gcc                      
