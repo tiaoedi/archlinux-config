@@ -63,6 +63,11 @@ sudo xbps-install -Syu kdenlive
 sudo xbps-install -Syu obs
 sudo xbps-install -Syu arc-theme-20221218_1
 
+sudo xbps-install -Sy nix
+sudo ln -s /etc/sv/nix-daemon /var/service
+source /etc/profile
+nix-channel --add http://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
 
 
 #sudo xbps-install -Syu xorg xorg-server xorg-apps 
