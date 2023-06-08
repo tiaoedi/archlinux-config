@@ -72,6 +72,6 @@ static const struct arg args[] = {
     { cpu_perc, "| cpu %s%|", NULL },
     { ram_used, " ram %s|", NULL },
     { datetime, " %s |","%d/%m/%Y-%H:%M" },
-    { run_command, "   %s ", "~/.config/dwm/scripts/volume.sh" },
+    { run_command, "  %s ", "~/.config/dwm/scripts/vol.sh" },
     
 };
