@@ -71,6 +71,7 @@ source /etc/profile
 nix-channel --add http://nixos.org/channels/nixpkgs-unstable
 nix-channel --update
 
+sh inst-fonts.sh*
 
 #sudo xbps-install -Syu xorg xorg-server xorg-apps 
 #sudo xbps-install -S lightdm lightdm-gtk-greeter
