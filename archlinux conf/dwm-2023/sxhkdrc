@@ -59,8 +59,8 @@ super + F12
 #################################################################
 
 #Atom
-super + e
-    atom
+#super + d
+   # discord
 
 #Browser
 super + w
@@ -72,19 +72,19 @@ super + c
 
 #Htop
 #super + h
-#    urxvt 'htop task manager' -e htop
+   # alacritty 'htop task manager' -e htop
 
 #archlinux-logout
 super + x
-    archlinux-logout
+    ~/.config/dwm/scripts/powermenu.sh
 
 #Rofi theme selector
 super + r
     rofi-theme-selector
 
 #Urxvt
-super + t
-    urxvt
+#super + t
+  #  thunderbird
 
 #Pavucontrol
 super + v
@@ -108,18 +108,15 @@ super + KP_Enter
 	alacritty
 #volume+
 super + a
-  pactl set-sink-volume 0 +5%
-
+   amixer -D pulse set Master 10%+
 
 #volume-
 super + s
-  pactl set-sink-volume 0 -5%
-
+  amixer -D pulse set Master 10%-
 
 #volume multe
 super + n
-  pactl set-sink-mute 0 toggle
-
+   amixer -D pulse set Master 1+ toggle
 
   
 #################################################################
@@ -241,15 +238,15 @@ ctrl + alt + a
 
 #Wallpaper trash
 alt + t
-    variety -t
+     thunderbird
 
 #Wallpaper next
-alt + n
-    variety -n
+alt + d
+   discord
 
 #Wallpaper previous
-alt + p
-    variety -p
+alt + h
+    alacritty -e htop
 
 #Wallpaper favorite
 alt + f
