@@ -249,8 +249,8 @@ alt + h
     alacritty -e htop
 
 #Wallpaper favorite
-alt + f
-    variety -f
+alt + k
+    kodi
 
 #Wallpaper previous
 alt + Left
