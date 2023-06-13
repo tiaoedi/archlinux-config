@@ -141,7 +141,7 @@ bindsym mod1+F3 exec --no-startup-id xfce4-appfinder
 # bindsym mod1+F5 exec --no-startup-id xlunch --config ~/.config/xlunch/default.conf --input ~/.config/xlunch/entries.dsv
 
 # start rofi full
-bindsym $mod+F11 exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 100%;height: 100%;}' -show drun -show-icons"
+bindsym $mod+F11 exec --no-startup-id " rofi -theme launcher2.rasi -show drun -show-icons -lines 6 -columns 4"
 
 # start rofi small
 bindsym $mod+F12 exec --no-startup-id rofi -show drun -show-icons
@@ -176,6 +176,9 @@ bindsym $mod+X exec --no-startup-id archlinux-logout
 bindsym $mod+Shift+r restart
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
+
+
 
 ################# Stopping an application          
 
@@ -383,7 +386,7 @@ exec --no-startup-id pamac-tray
 
 
 # volume
-# exec --no-startup-id pasystray
+exec --no-startup-id pasystray
 #exec --no-startup-id volumeicon
 
 
@@ -406,6 +409,14 @@ exec --no-startup-id kdeconnect-indicator &
 #xset led
 exec --no-startup-id xset led 3 &
  
+exec --no-startup-id xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 & 
+exec --no-startup-id  albert &
+exec --no-startup-id xbacklight -set 35 &
+exec --no-startup-id xset r rate 300 50 &
+exec --no-startup-id xset s off &
+exec --no-startup-id xset -dpms &
+
+
 #ufw
 #exec  --no-startup-id sudo ufw enable --noconfirm --needed &
 
@@ -434,26 +445,26 @@ exec --no-startup-id conky -c ~/.config/i3/system-overview
 # exec --no-startup-id feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 
       
-#bar {
+bar {
 #status_command i3status
-#status_command i3status -c ~/.config/i3/i3status.conf
+status_command i3status -c ~/.config/i3/i3status.conf
 
 #mode hide
-#position top
+position top
 #output primary
 #tray_output none
-#font pango:DejaVu Sans Mono 10
+font pango:JetBrainsMonoMedium Nerd Font 11
 #separator_symbol “⁞”
        
    # status_command bumblebee-status \
    #   -m weather cpu memory time pasink\
    #  -p time.format="%d %b %Y, %a %H:%M" \
    #  -t solarized   
-#}
+}
 
 
 # Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
+#exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 ################# system applications       
 
@@ -511,6 +522,8 @@ bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 # pavucontrol
 bindsym control+mod1+u exec --no-startup-id pavucontrol
 
+
+
 # start xfce-appfinder
 # archlinux does not seem to work
 bindsym control+mod1+a exec --no-startup-id xfce4-appfinder
@@ -557,6 +570,10 @@ bindsym $mod+F8 exec --no-startup-id thunar;focus
 bindsym $mod+Shift+Return exec --no-startup-id thunar;focus
 bindsym $mod+Shift+KP_Enter exec --no-startup-id thunar;focus
 bindsym control+mod1+b exec --no-startup-id thunar;focus
+
+
+#volume
+
 
 # mail application
 bindsym $mod+F9 exec --no-startup-id evolution;focus
@@ -661,8 +678,7 @@ bindsym mod1+Shift+u exec --no-startup-id wal -i $(cat $HOME/.config/variety/wal
 
 ################# audio settings                   
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -D pulse sset Master '5%+'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -D pulse sset Master '5%-'"
+
 bindsym XF86AudioMute exec --no-startup-id "amixer -D pulse set Master toggle"
 # https://github.com/acrisci/playerctl/
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -719,8 +735,8 @@ popup_during_fullscreen smart
 for_window [class="^.*"] border pixel 2
 gaps inner 5
 gaps outer 5
-# smart_gaps on
-# smart_borders on
+ smart_gaps on
+ smart_borders on
 
 ################# i3 gaps change                   
 
@@ -730,7 +746,7 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
+        bindsym 0      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
