@@ -1,5 +1,4 @@
 
-
 ##################################################################################################################
 ################################      LINUXLIVRE       ###########################################################
 ##################################################################################################################
@@ -176,6 +175,18 @@ bindsym $mod+X exec --no-startup-id archlinux-logout
 bindsym $mod+Shift+r restart
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
+
+###########volume#################
+bindsym $mod+Shift+a exec --no-startup-id amixer -D pulse set Master 10%+
+bindsym $mod+Shift+s exec --no-startup-id amixer -D pulse set Master 10%-
+bindsym $mod+Shift+n exec --no-startup-id amixer -D pulse set Master 1+ toggle
+
+
+################vivaldi###############
+
+bindsym $mod+Shift+v exec --no-startup-id vivaldi-stable
+
 
 
 
@@ -381,8 +392,6 @@ for_window [class="Spotify"] focus
 # Authentication dialog
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# Updater
-exec --no-startup-id pamac-tray
 
 
 # volume
@@ -394,7 +403,7 @@ exec --no-startup-id pasystray
 # exec --no-startup-id blueberry-tray
 
 # network
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # num lock activated
 exec_always --no-startup-id numlockx on
