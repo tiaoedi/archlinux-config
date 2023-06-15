@@ -72,11 +72,10 @@ ZSH_THEME="bira"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
 
-zsh-autosuggestions
-zsh-syntax-highlighting
-  
-)
+ zsh-syntax-highlighting
+ zsh-autosuggestions
 
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,7 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+
+#ignore upper and lowercase when TAB completion
+#bind "set completion-ignore-case on"
 
 
 #list
@@ -119,7 +121,7 @@ alias listdir="ls -d */ > list"
 
 
 
-#PS1=' - \W  ' 
+#PS1='-  ' 
 
 
 
@@ -166,17 +168,6 @@ alias yta-flac="yt-dlp --extract-audio --audio-format flac "
 alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
-#maintenance
-alias big="expac -H M '%m\t%n' | sort -h | nl"
-alias downgrada="sudo downgrade --ala-url https://ant.seedhost.eu/arcolinux/"
-
-
-
-#Recent Installed Packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
-
-
 
 #Vim
 alias vim='nvim'
@@ -185,7 +176,7 @@ alias svim='sudo nvim'
 alias ht='htop'
 alias nf='neofetch | lolcat'
 alias cm='cmatrix'
-alias resolv='svim  /etc/resolv.conf'
+alias sp='speedtest'
 
 
 #clear
@@ -213,8 +204,9 @@ alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable l
 #mirror
 alias mirror='svim /etc/pacman.conf'
 
-#give the list of all installed desktops - xsessions desktops
-alias xd="ls /usr/share/xsessions"
-alias xdw="ls /usr/share/wayland-sessions"
+alias resolv='svim /etc/resolv.conf'
+
 
 clean
+
+

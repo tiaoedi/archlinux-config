@@ -103,4 +103,7 @@ alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable l
 #mirror
 alias mirror='svim /etc/pacman.conf'
 
+alias resolv='svim /etc/resolv.conf'
+
+
 clean
