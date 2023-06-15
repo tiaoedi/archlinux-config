@@ -200,6 +200,7 @@ sudo pacman -S --noconfirm --needed xorg-xkill
 sudo pacman -S --noconfirm --needed yay-bin
 sudo pacman -Syu
 yay -S --noconfirm --needed dwm
+yay -S --noconfirm --needed devour
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
