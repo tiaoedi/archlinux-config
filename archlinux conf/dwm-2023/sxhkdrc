@@ -40,7 +40,7 @@ super + F8
 
 #Evolution
 super + F9
-    evolution
+    alacritty -e ~/.config/dwm/scripts/app.sh 
 
 #Spotify
 super + F10
@@ -58,9 +58,9 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#App
 #super + d
-   # discord
+   
 
 #Browser
 super + w
