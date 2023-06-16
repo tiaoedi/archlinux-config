@@ -91,13 +91,13 @@ volume-max = #bf616a
 ################################################################################
 
 [bar/mainbar-bspwm]
-monitor = ${env:MONITOR}
-;monitor-fallback = HDMI1
+monitor = ${HDMI1}
+monitor-fallback = HDMI1
 width = 100%
 height = 30
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 0.0
+radius = 10
 fixed-center = true
 bottom = false
 separator = |
@@ -105,7 +105,7 @@ separator = |
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 1
 line-color = #f00
 
 wm-restack = bspwm
@@ -115,18 +115,18 @@ override-redirect = true
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
-border-size = 0
+border-size = 6
 ;border-left-size = 0
 ;border-right-size = 8
 ;border-top-size = 0
 ;border-bottom-size = 8
 border-color = #00000000
 
-padding-left = 0
-padding-right = 1
+padding-left = 3
+padding-right = 3
 
-module-margin-left = 3
-module-margin-right = 3
+module-margin-left = 2
+module-margin-right = 2
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=10;0"
@@ -138,7 +138,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 ##############################################################################  
 
 
-modules-left =  menu  bspwm  hypnotix firefox google explorer discord telegram evolution
+modules-left =  bspwm explorer discord telegram evolution
 modules-center = xwindow
 modules-right = temp arch-updates  cpu-graph memory2 date powermenu pulseaudio
 
@@ -314,7 +314,7 @@ format-padding = 1
 
 [module/menu]
 type = custom/text
-content ="  - rch-"
+content ="  - Arch -"
 content-padding = 1
 ;content-margin = 1
 content-foreground = #26a4e3
@@ -342,13 +342,13 @@ click-right = killall Discord
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-format-volume-background = #00000000
-format-volume-foreground = #c3f61f
+format-volume-background = ${colors.background}
+format-volume-foreground = ${colors.foreground}
 label-volume =  %percentage%% 
 label-volume-foreground = ${color.foreground}
 
 label-muted =  muted
-label-muted-foreground = #888
+label-muted-foreground = #5555
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -376,7 +376,7 @@ interval = 1
 label = %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
+format-prefix = " sp "
 format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
 
@@ -398,12 +398,12 @@ enable-scroll = true
 reverse-scroll = true
 pin-workspaces = true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
+ws-icon-0 = 1;-rch-
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
 ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
@@ -909,7 +909,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format =   <label>
+format = ram  <label>
 ;format-prefix = "  "
 format-prefix-foreground = #3384d0
 format-underline = #3384d0
@@ -1492,7 +1492,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = menu ewmh hypnotix firefox google explorer discord gsimplecal  telegram spotify evolution weather screenshot 
-modules-center = xwindow
+modules-center = xwindow 
 modules-right = cpu-graph memory2  date powermenu pulseaudio
 
 separator = |
@@ -1635,3 +1635,27 @@ cursor-scroll =
 
 
 
+[module/title]
+type = internal/xwindow
+
+; Available tags:
+;   <label> (default)
+format = <label>
+#format-background = #0000
+#format-foreground = #00015
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+format-padding = 2
+
+; Available tokens:
+;   %title%
+; Default: %title%
+label = %title%
+label-maxlen = 50
+
+; Used instead of label when there is no window title
+; Available tokens:
+;   None
+label-empty = Empty
+label-empty-foreground = #7078
