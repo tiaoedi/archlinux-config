@@ -50,7 +50,7 @@ super + F8
 
 #Evolution
 super + F9
-    evolution
+   alacritty -e ~/.config/dwm/scripts/app.sh 
 
 #Spotify
 super + F10
@@ -240,19 +240,19 @@ ctrl + alt + a
 
 #Wallpaper trash
 alt + t
-    variety -t
+    thunderbird
 
 #Wallpaper next
-alt + n
-    variety -n
+alt + d
+   discord
 
 #Wallpaper previous
-alt + p
-    variety -p
+alt + h
+   alacritty -e htop
 
 #Wallpaper favorite
-alt + f
-    variety -f
+alt + k
+    kodi
 
 #Wallpaper previous
 alt + Left
