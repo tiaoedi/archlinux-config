@@ -246,7 +246,12 @@ fi
 echo "UFW está instalado e ativado."
 
 sudo systemctl enable ufw 
+
+echo "Add regras ao UFW!!"
+
 sh ufw-config.sh*
+
+echo "regras adcionadas ao UFW com sucesso!!"
 
 #sudo pacman -S --noconfirm --needed rxvt-unicode
 #sudo pacman -S --noconfirm --needed urxvt-fullscreen
