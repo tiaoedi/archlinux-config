@@ -33,7 +33,7 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
   echo "################################################################"
   tput sgr0
   echo
-  sh get-the-keys-and-repos.sh*
+  #sh get-the-keys-and-repos.sh*
   sudo pacman -Syyu
 fi
 
@@ -212,6 +212,9 @@ sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
 sudo pacman -S --noconfirm --needed grub-btrfs
 sudo pacman -S --noconfirm --needed timeshift-autosnap
 sudo pacman -S --noconfirm --needed vimix-cursors
+sudo pacman -S --noconfirm --needed qogir-gtk-theme-git 
+sudo pacman -S --noconfirm --needed xfce4-power-manager
+sudo pacman -S --noconfirm --needed xfce4-screensaver
 sudo pacman -S --noconfirm --needed powerline
 sudo pacman -S --noconfirm --needed guvcview
 sudo pacman -S --noconfirm --needed dropbox
