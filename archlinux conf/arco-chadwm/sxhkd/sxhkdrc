@@ -40,7 +40,7 @@ super + F8
 
 #Evolution
 super + F9
-    evolution
+    alacritty -e ~/.config/chadwm/scripts/app.sh 
 
 #Spotify
 super + F10
@@ -58,9 +58,9 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
-super + e
-    atom
+#App
+#super + d
+   
 
 #Browser
 super + w
@@ -72,19 +72,19 @@ super + c
 
 #Htop
 #super + h
-#    urxvt 'htop task manager' -e htop
+   # alacritty 'htop task manager' -e htop
 
 #archlinux-logout
 super + x
-    archlinux-logout
+    ~/.config/chadwm/scripts/powermenu.sh
 
 #Rofi theme selector
 super + r
     rofi-theme-selector
 
 #Urxvt
-super + t
-    urxvt
+#super + t
+  #  thunderbird
 
 #Pavucontrol
 super + v
@@ -108,18 +108,15 @@ super + KP_Enter
 	alacritty
 #volume+
 super + a
-  pactl set-sink-volume 0 +5%
-
+   amixer -D pulse set Master 10%+
 
 #volume-
 super + s
-  pactl set-sink-volume 0 -5%
-
+  amixer -D pulse set Master 10%-
 
 #volume multe
 super + n
-  pactl set-sink-mute 0 toggle
-
+   amixer -D pulse set Master 1+ toggle
 
   
 #################################################################
@@ -241,19 +238,19 @@ ctrl + alt + a
 
 #Wallpaper trash
 alt + t
-    variety -t
+     thunderbird
 
 #Wallpaper next
-alt + n
-    variety -n
+alt + d
+   discord
 
 #Wallpaper previous
-alt + p
-    variety -p
+alt + h
+    alacritty -e htop
 
 #Wallpaper favorite
-alt + f
-    variety -f
+alt + k
+    kodi
 
 #Wallpaper previous
 alt + Left
