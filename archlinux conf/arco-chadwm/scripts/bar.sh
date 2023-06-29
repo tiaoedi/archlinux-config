@@ -6,12 +6,12 @@
 interval=0
 
 # load colors
-. ~/.config/arco-chadwm/scripts/bar_themes/dracula
+. ~/.config/chadwm/scripts/bar_themes/tokyonight
 
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$white^ ^b$black^ CPU"
+  printf "^c$white^ ^b$black^ CPU"
   printf "^c$white^ ^b$black^ $cpu_val"
 }
 
@@ -27,7 +27,7 @@ cpu() {
 
 upd() {
   printf "^c$green^ ^b$black^arch "
-  printf "^c$green^^b$black^$(/home/archpc/.config/arco-chadwm/scripts/upd.sh)"
+  printf "^c$green^^b$black^$(~/.config/chadwm/scripts/upd.sh)"
 }
 
 
@@ -42,27 +42,27 @@ mem() {
   printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
-wlan() {
-	case "$(cat /sys/class/net/enp3s0*/operstate 2>/dev/null)" in
-	up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Con" ;;
-	down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Dis" ;;
-	esac
-}
+#wlan() {
+	#case "$(cat /sys/class/net/enp3s0*/operstate 2>/dev/null)" in
+	#up) printf "^c$white^ ^b$black^  ^d^%s" " ^c$black^" ;;
+	#down) printf "^c$black^ ^b$black^ 󰤭 ^d^%s" " ^c$black^0" ;;
+	#esac
+#}
 
 
 volume() {
-  printf "^c$blue^ ^b$black^ 🔊 "
-  printf "^c$blue^^b$black^$(~/.config/arco-chadwm/scripts/volume.sh)"
+  printf "^c$white^^b$black^ "
+  printf "^c$white^^b$black^$(~/.config/chadwm/scripts/volume.sh)"
 }
 
 weather() {
-  printf "^c$blue^ ^b$black^🌤️"
-  printf "^c$blue^^b$black^$(/home/archpc/.config/arco-chadwm/scripts/tem.py)"
+  printf "^c$blue^ ^b$black^  "
+  printf "^c$blue^^b$black^$(~/.config/chadwm/scripts/tem.py)"
 }
 
 clock() {
-	printf "^c$black^ ^b$blue^  "
-	printf "^c$black^^b$blue^ $(date '+%d/%m/%y %H:%M')  "
+	printf "^c$white^ ^b$black^  "
+	printf "^c$white^^b$black^ $(date '+%d/%m/%y %H:%M') "
 }
 
 while true; do
@@ -70,5 +70,5 @@ while true; do
   [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
   interval=$((interval + 1))
 
-  sleep 2 && xsetroot -name " $(weather) $(upd)$updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock) $(volume)"
+  sleep 2 && xsetroot -name " $(weather) $(upd)$updates $(battery) $(brightness) $(cpu) $(mem) $(clock) $(volume)"
 done
