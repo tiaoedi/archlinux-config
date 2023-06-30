@@ -36,7 +36,7 @@ xset -dpms &
 run "xset led 3" & 
 run kdeconnect-indicator &
 run "dropbox"
-feh --bg-fill /home/pc/.config/chadwm/wallpaper/chadwm1.png &
+feh --bg-fill ~/.config/chadwm/wallpaper/chadwm1.png &
 #run "slstatus" &
 run "variety" &
 #run "insync start"
