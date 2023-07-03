@@ -15,6 +15,8 @@ sudo pacman -Syyu
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed curl
+sudo pacman -S --noconfirm --needed dash
+
 
 if grep -q arcolinux_repo /etc/pacman.conf; then
 
@@ -33,7 +35,8 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
   echo "################################################################"
   tput sgr0
   echo
-  #sh get-the-keys-and-repos.sh*
+  sudo cp arcolinux-mirrorlist /etc/pacman.d/
+  sh get-the-keys-and-repos.sh*
   sudo pacman -Syyu
 fi
 
