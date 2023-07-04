@@ -294,6 +294,7 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
 fi
 
 sh inst-fonts.sh*
+sh drive-som.sh*
 
 #bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 echo
