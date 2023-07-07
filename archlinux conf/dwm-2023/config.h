@@ -14,7 +14,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"JetBrainsMonoMedium Nerd Font:size=10" ,"JetBrainsMonoMedium Nerd Font:size=10","JetBrainsMonoMedium Nerd Font:size=10"};
+static const char *fonts[]          = {"Iosevka:style:medium:size=10" ,"JetBrainsMonoMedium Nerd Font:size=10","JetBrainsMonoMedium Nerd Font:size=10"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#444444";
@@ -28,7 +28,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = {  "- rch-", "  ",  "  ",  "  ",  "  "};
+static char *tags[] = {"", "", "", "", ""};
+//static char *tags[] = {  "- rch-", " ",  "",  "",  ""};
 //static const char *tags[] = { "-Arch-", "" , "", "", "" };
 //static char *tags[] = { "1️⃣", "2️⃣" , "3️⃣", "4️⃣", "5️⃣" , "6️⃣", "7️⃣", "8️⃣", "9️⃣ " };
 //static char *tags[] = { "✔️", "🔥" , "📩", "⚙️", "🏠" , "📽️", "🖥️", "📂", "📻 " };
@@ -56,8 +57,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ " ",      tile },    /* first entry is default */
-	{ " ",      NULL },    /* no layout function means floating behavior */
+	{ "[]=",      tile },    /* first entry is default */
+	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 	{ "><>",      monocle }, /* new entry for floating layout */
 };
