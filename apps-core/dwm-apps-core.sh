@@ -219,7 +219,8 @@ sudo pacman -S --noconfirm --needed qogir-gtk-theme-git
 sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed xfce4-screensaver
 sudo pacman -S --noconfirm --needed powerline
-sudo pacman -S --noconfirm --needed guvcview
+#sudo pacman -S --noconfirm --needed guvcview
+sudo pacman -S --noconfirm --needed cameractrls
 sudo pacman -S --noconfirm --needed dropbox
 sudo pacman -S --noconfirm --needed kdeconnect
 sudo pacman -S --noconfirm --needed hypnotix
