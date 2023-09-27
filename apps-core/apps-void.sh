@@ -73,9 +73,9 @@ sudo xbps-install -Syu arc-theme-20221218_1
 
 sh inst-fonts.sh*
 
-#sudo xbps-install -Syu xorg xorg-server xorg-apps 
+sudo xbps-install -Syu xorg xorg-server xorg-apps 
 #sudo xbps-install -S lightdm lightdm-gtk-greeter
-#sudo xbps-install -S sddm
+sudo xbps-install -S sddm
 
 
 ###################
