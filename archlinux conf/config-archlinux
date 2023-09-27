@@ -227,3 +227,28 @@ Current=/usr/share/sddm/themes/maldives
 #datacenter
 https://ftp.belnet.be/arcolinux/
 
+###########################################################
+enymotion Desktop requer um hipervisor para executar o sistema Android. A partir do Genymotion Desktop 3.3.0 é possível escolher entre QEMU ou VirtualBox.
+
+
+QEMU
+Caixa Virtual
+QEMU está incluído no Genymotion. Requer kvmque é instalado por padrão em nossas distribuições suportadas .
+
+Você não precisará instalar nada se escolher este hipervisor.
+
+Instalação do Genymotion Desktop¶
+Abra um terminal e vá para sua pasta inicial de download 1 :
+
+
+cd ~/Download
+Dê permissão de execução ao arquivo binário do instalador Genymotion:
+
+
+chmod +x genymotion-X.Y.Z-linux_x64.bin
+Execute o instalador. PATHé o caminho de destino de instalação 2 :
+
+
+./genymotion-X.Y.Z-linux_x64.bin -d PATH
+Instalação global (não recomendada)
+
