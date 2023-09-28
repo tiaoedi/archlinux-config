@@ -31,7 +31,7 @@ xset -dpms &
 run "xset led 3" & 
 run kdeconnect-indicator &
 #run "dropbox"
-feh --bg-fill /home/pc/Imagens/wallpaper/candy-03.jpg &
+feh --bg-fill /home/pc/.config/chadwm/chadwm/wall.jpeg &
 
 
 ~/.config/chadwm/scripts/bar.sh &
