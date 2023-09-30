@@ -297,6 +297,14 @@ fi
 sh inst-fonts.sh*
 sh drive-som.sh*
 
+
+sudo cp Xsetup /usr/share/sddm/scripts/
+sudo cp sddm.conf /etc/
+
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo cp /etc/X11/xorg.conf.d/20-intel.conf
+
+
 #bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
 echo
 tput setaf 6
