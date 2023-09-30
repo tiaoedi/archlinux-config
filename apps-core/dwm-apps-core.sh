@@ -17,28 +17,7 @@ sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dash
 
-
-if grep -q arcolinux_repo /etc/pacman.conf; then
-
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "################ ArcoLinux repos are already in /etc/pacman.conf "
-  echo "################################################################"
-  tput sgr0
-  echo
-  else
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "################### Getting the keys and mirrors for ArcoLinux"
-  echo "################################################################"
-  tput sgr0
-  echo
-  sudo cp arcolinux-mirrorlist /etc/pacman.d/
-  sh get-the-keys-and-repos.sh*
-  sudo pacman -Syyu
-fi
+sh yay.sh*
 
 echo
 tput setaf 2
@@ -49,7 +28,7 @@ tput sgr0
 echo
 
  sudo pacman -Syyu --noconfirm --needed
-
+ yay -S --noconfirm --needed paru-bin
 
 ##################################################################################################################
 
@@ -152,7 +131,6 @@ sudo pacman -S --noconfirm --needed nss-mdns
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed oh-my-zsh-git
 sudo pacman -S --noconfirm --needed openresolv
-sudo pacman -S --noconfirm --needed paru-bin
 sudo pacman -S --noconfirm --needed pavucontrol
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed polkit-gnome
@@ -164,7 +142,7 @@ sudo pacman -S --noconfirm --needed rate-mirrors-bin
 sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed scrot
-sudo pacman -S --noconfirm --needed sardi-icons
+yay -S --noconfirm --needed sardi-icons
 #sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed sparklines-git
 sudo pacman -S --noconfirm --needed speedtest-cli-git
@@ -189,10 +167,10 @@ sudo pacman -S --noconfirm --needed ttf-roboto-mono
 sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
 sudo pacman -S --noconfirm --needed upd72020x-fw
 sudo pacman -S --noconfirm --needed variety
-sudo pacman -S --noconfirm --needed visual-studio-code-bin
-sudo pacman -S --noconfirm --needed vivaldi
-sudo pacman -S --noconfirm --needed vivaldi-ffmpeg-codecs
-sudo pacman -S --noconfirm --needed vivaldi-widevine
+#sudo pacman -S --noconfirm --needed visual-studio-code-bin
+#sudo pacman -S --noconfirm --needed vivaldi
+#sudo pacman -S --noconfirm --needed vivaldi-ffmpeg-codecs
+#sudo pacman -S --noconfirm --needed vivaldi-widevine
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 sudo pacman -S --noconfirm --needed wget
@@ -200,7 +178,7 @@ sudo pacman -S --noconfirm --needed wttr
 sudo pacman -S --noconfirm --needed xcolor
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed xorg-xkill
-sudo pacman -S --noconfirm --needed yay-bin
+#sudo pacman -S --noconfirm --needed yay-bin
 sudo pacman -Syu
 yay -S --noconfirm --needed dwm
 yay -S --noconfirm --needed devour
@@ -214,8 +192,8 @@ sudo pacman -S --noconfirm --needed stacer
 sudo pacman -S --noconfirm --needed libreoffice-fresh-pt-br
 sudo pacman -S --noconfirm --needed grub-btrfs
 sudo pacman -S --noconfirm --needed timeshift-autosnap
-sudo pacman -S --noconfirm --needed vimix-cursors
-sudo pacman -S --noconfirm --needed qogir-gtk-theme-git 
+yay -S --noconfirm --needed vimix-cursors
+yay -S --noconfirm --needed qogir-gtk-theme-git 
 sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed xfce4-screensaver
 sudo pacman -S --noconfirm --needed powerline
@@ -223,10 +201,10 @@ sudo pacman -S --noconfirm --needed powerline
 sudo pacman -S --noconfirm --needed cameractrls
 sudo pacman -S --noconfirm --needed dropbox
 sudo pacman -S --noconfirm --needed kdeconnect
-sudo pacman -S --noconfirm --needed hypnotix
+yay -S --noconfirm --needed hypnotix
 #sudo pacman -S --noconfirm --needed steam
-sudo pacman -S --noconfirm --needed google-chrome
-sudo pacman -S --noconfirm --needed brave
+yay -S --noconfirm --needed google-chrome
+#sudo pacman -S --noconfirm --needed brave
 sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
 sudo pacman -S --noconfirm --needed ristretto
