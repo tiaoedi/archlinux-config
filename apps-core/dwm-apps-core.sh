@@ -183,6 +183,7 @@ sudo pacman -Syu
 yay -S --noconfirm --needed dwm
 yay -S --noconfirm --needed devour
 yay -S --noconfirm --needed betterlockscreen
+yay -S --noconfirm --needed mcmojave-cursors
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
