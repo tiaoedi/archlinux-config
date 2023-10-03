@@ -182,6 +182,7 @@ sudo pacman -S --noconfirm --needed xorg-xkill
 sudo pacman -Syu
 yay -S --noconfirm --needed dwm
 yay -S --noconfirm --needed devour
+yay -S --noconfirm --needed betterlockscreen
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
