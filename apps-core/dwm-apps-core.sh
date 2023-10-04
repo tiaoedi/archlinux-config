@@ -144,7 +144,7 @@ sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed scrot
 yay -S --noconfirm --needed sardi-icons
 #sudo pacman -S --noconfirm --needed simplescreenrecorder
-sudo pacman -S --noconfirm --needed sparklines-git
+yay -S --noconfirm --needed sparklines-git
 sudo pacman -S --noconfirm --needed speedtest-cli-git
 #sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
@@ -211,6 +211,9 @@ sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
 sudo pacman -S --noconfirm --needed ristretto
 sudo pacman -S --noconfirm --needed thunar
+sudo pacman -S --noconfirm --needed thunar-archive-plugin
+sudo pacman -S --noconfirm --needed thunar-media-tags-plugin
+sudo pacman -S --noconfirm --needed thunar-volman
 sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
 sudo pacman -S --noconfirm --needed virtualbox
 sudo systemctl enable avahi-daemon.service
