@@ -185,6 +185,7 @@ yay -S --noconfirm --needed devour
 yay -S --noconfirm --needed betterlockscreen
 yay -S --noconfirm --needed mcmojave-cursors
 yay -S --noconfirm --needed gvfs
+yay -S --noconfirm --needed libadwaita-without-adwaita-git
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
