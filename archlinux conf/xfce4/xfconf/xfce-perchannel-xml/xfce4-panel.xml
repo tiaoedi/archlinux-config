@@ -59,6 +59,12 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-1200"/>
+        <value type="string" value="dropbox-client-818"/>
+        <value type="string" value="dropbox-client-1025"/>
+        <value type="string" value="dropbox-client-1035"/>
+        <value type="string" value="dropbox-client-1053"/>
+        <value type="string" value="dropbox-client-1027"/>
         <value type="string" value="dropbox-client-1022"/>
         <value type="string" value="dropbox-client-1912"/>
         <value type="string" value="dropbox-client-1028"/>
@@ -233,7 +239,7 @@
     </property>
     <property name="plugin-7" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="Chrome;vlc"/>
+      <property name="known-players" type="string" value="Brave;Chrome;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="2"/>

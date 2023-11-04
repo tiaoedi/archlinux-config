@@ -62,13 +62,13 @@
       <property name="&lt;Super&gt;Return" type="string" value="alacritty"/>
       <property name="&lt;Super&gt;F8" type="string" value="thunar"/>
       <property name="&lt;Super&gt;F2" type="string" value="google-chrome-stable"/>
-      <property name="&lt;Alt&gt;t" type="string" value="flatpak run org.mozilla.Thunderbird"/>
       <property name="&lt;Alt&gt;k" type="string" value="flatpak run tv.kodi.Kodi"/>
       <property name="&lt;Super&gt;F5" type="string" value="hypnotix"/>
       <property name="&lt;Super&gt;F12" type="string" value=" rofi -show drun -show-icons"/>
       <property name="&lt;Super&gt;F11" type="string" value="rofi -theme launcher2.rasi -show drun -show-icons -lines 6 -columns 4"/>
       <property name="&lt;Super&gt;F4" type="string" value="gimp"/>
       <property name="&lt;Super&gt;F6" type="string" value="vlc"/>
+      <property name="&lt;Alt&gt;t" type="string" value="thunderbird"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
