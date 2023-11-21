@@ -40,7 +40,7 @@ super + F8
 
 #Evolution
 super + F9
-    alacritty -e ~/.config/chadwm/scripts/app.sh 
+    alacritty -e ~/.config/dwm/scripts/app.sh 
 
 #Spotify
 super + F10
@@ -76,7 +76,7 @@ super + c
 
 #archlinux-logout
 super + x
-    ~/.config/chadwm/scripts/powermenu.sh
+    ~/.config/dwm/scripts/powermenu.sh
 
 #Rofi theme selector
 super + r
@@ -401,4 +401,4 @@ XF86MonBrightnessDown
 
 #Picom Toggle
 ctrl + alt + o
-    ~/.config/arco-chadwm/scripts/picom-toggle.sh
+    ~/.config/dwm/scripts/picom-toggle.sh
