@@ -2,5 +2,5 @@
 
 updates=$(checkupdates | wc -l)
 
-echo "$updates"
+echo " Arch $updates"
 

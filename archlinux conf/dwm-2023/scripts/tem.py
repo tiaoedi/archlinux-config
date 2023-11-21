@@ -19,5 +19,5 @@ def get_temperature(weather_data):
 
 weather_data = get_weather_data(city_name, api_key)
 temperature = get_temperature(weather_data)
-print(f" +{temperature:.2f}C ")
+print(f"  +{temperature:.2f}C ")
 
