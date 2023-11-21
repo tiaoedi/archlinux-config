@@ -1,7 +1,5 @@
 /* See LICENSE file for copyright and license details. */
 
-
-
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
 
@@ -73,5 +71,4 @@ static const struct arg args[] = {
     { ram_used, "  %s|", NULL },
     { datetime, " %s|","%d/%m/%Y-%H:%M" },
     { run_command, "  %s ","~/.config/dwm/scripts/volume.sh" },
-    
 };
