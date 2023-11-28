@@ -72,7 +72,7 @@ super + c
 
 #Htop
 #super + h
-   # alacritty 'htop task manager' -e htop
+   # st 'htop task manager' -e htop
 
 #archlinux-logout
 super + x
@@ -96,7 +96,7 @@ super + v
 
 #alacritty
 super + Return
-    alacritty
+     st
 
 #Xkill
 super + Escape
