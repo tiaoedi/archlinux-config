@@ -188,6 +188,7 @@ yay -S --noconfirm --needed gvfs
 yay -S --noconfirm --needed libadwaita-without-adwaita-git
 yay -S --noconfirm --needed thorium-browser
 yay -S --noconfirm --needed fzf
+yay -S --noconfirm --needed mpstat
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
