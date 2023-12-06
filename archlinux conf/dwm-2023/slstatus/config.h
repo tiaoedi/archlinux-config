@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ run_command, "%s|","~/.config/dwm/scripts/tem.py &" },
     { run_command, "%s","~/.config/dwm/scripts/upd.sh &" },
-    { cpu_perc, "| %s% |", NULL },
+    { run_command, " %s ","~/.config/dwm/scripts/cpu.sh &" },
     { ram_used, " %s|", NULL },
     { run_command, " %s ","~/.config/dwm/scripts/hora.sh &" },
     { run_command, "%s ","~/.config/dwm/scripts/volume.sh &" },
