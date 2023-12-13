@@ -7,8 +7,8 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/pc4/Dropbox/Documentos/wallpaper/wallhaven-kx98xd.jpg"/>
-          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="last-image" type="string" value="/home/pc120/Imagens/wallpaper/wallhaven-6qekxw.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
           <property name="backdrop-cycle-timer" type="uint" value="5"/>
         </property>
@@ -36,7 +36,7 @@
     </property>
   </property>
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="711"/>
+    <property name="window-width" type="int" value="879"/>
     <property name="window-height" type="int" value="526"/>
   </property>
   <property name="desktop-icons" type="empty">
@@ -46,5 +46,7 @@
       <property name="show-trash" type="bool" value="false"/>
       <property name="show-removable" type="bool" value="false"/>
     </property>
+    <property name="show-tooltips" type="bool" value="true"/>
+    <property name="show-thumbnails" type="bool" value="true"/>
   </property>
 </channel>
