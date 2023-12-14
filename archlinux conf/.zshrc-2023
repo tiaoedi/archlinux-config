@@ -114,7 +114,7 @@ alias sprs='sudo pacman -Rs'
 alias sprdd='sudo pacman -Rdd'
 alias spqo='sudo pacman -Qo'
 alias spsii='sudo pacman -Sii'
-
+alias mk='sudo mkinitcpio -P'
 
 #fix obvious typo's
 alias cd..='cd ..'
@@ -158,6 +158,7 @@ alias svim='sudo nvim'
 alias ht='htop'
 alias nf='neofetch | lolcat'
 alias cm='cmatrix'
+alias stx='startx'
 
 #clear
 alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
