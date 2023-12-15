@@ -4,8 +4,8 @@
 
 /* appearance */
 
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 8;        /* gaps between windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
+static const unsigned int gappx     = 4;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;    /* 0: systray in the right corner, >0: systray on left of status text */
@@ -58,8 +58,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "N=",      tile },    /* first entry is default */
+	{ "F",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 	{ "><>",      monocle }, /* new entry for floating layout */
 };
@@ -77,7 +77,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 #include "movestack.c"
 #include "selfrestart.c"
 
