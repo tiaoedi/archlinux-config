@@ -1,0 +1,67 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 12,
+
+   "modules-left": 
+    ["hyprland/workspaces", "hyprland/mode"],
+
+    "modules-center":
+    ["hyprland/window"],
+
+    "modules-right": [
+     "custom/update" , "memory" , "cpu" , "pulseaudio", "clock", "tray"],
+
+        "custom/update": {
+	"format": "{}",
+	"exec": "$HOME/.config/scripts/upd.sh",
+	},
+	"clock": {
+        "format": "{:  %d %b, %Y, %a - %R}",
+		"tooltip": false
+	},
+	"hyprland/window": {
+		"max-length": 60,
+		"separate-outputs": false
+	},
+	"memory": {
+		"interval": 5,
+		"format": " {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": " {usage:2}%",
+        "tooltip": false
+	},
+    "disk": {
+        "format": "  {free}/{total}",
+        "tooltip": false
+    },
+	"custom/packages": {
+		"exec": "~/.local/bin/packagecount",
+		"format": " {}",
+		"interval": 45
+	},
+	"tray": {
+		//"icon-size": 12,
+		"spacing": 12
+	},
+    "pulseaudio": {
+        "format": "{icon} {volume}%   {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "   {volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+}
