@@ -11,7 +11,7 @@ interval=0
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$white^ ^b$black^ CPU"
+  printf "^c$white^ ^b$black^ CPU"
   printf "^c$white^ ^b$black^ $cpu_val"
 }
 
@@ -38,7 +38,7 @@ upd() {
 #}
 
 mem() {
-   printf "^c$blue^^b$black^  "
+   printf "^c$blue^^b$black^  "
   printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
@@ -61,8 +61,8 @@ weather() {
 }
 
 clock() {
-	printf "^c$white^ ^b$black^  "
-	printf "^c$white^^b$black^ $(date '+%d/%m/%y %H:%M') "
+	printf "^c$white^ ^b$black^"
+	printf "^c$white^^b$black^ $(date '+%a/%d/%b/%y/ %H:%M-%S') "
 }
 
 while true; do
