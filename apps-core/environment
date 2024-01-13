@@ -6,4 +6,5 @@ QT_QPA_PLATFORMTHEME=qt5ct
 QT_STYLE_OVERRIDE=kvantum
 EDITO=neovim
 BROWSER=google-chrome
-GTK_THEME=Qogir-Manjaro-Dark
+#GTK_THEME=/home/pc120/.config/gtk-3.0/settings.ini
+gtk_themes = ~/.config/wayfire/scripts/gtkthemes &
