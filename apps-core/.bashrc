@@ -11,7 +11,7 @@ export PAGER='most'
 #export XMODIFIERS=@im=dbus
 #export QT_IM_MODULE=ibus
 
-PS1="\[\e[1;33m\]\w \[\e[ w : "
+PS1="\[\e[1;33m\]{\w} \[\e[1;34m\]\u : \[\e[0;37m\] "
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -326,6 +326,7 @@ alias mirror='svim /etc/pacman.conf'
 
 alias resolv='svim /etc/resolv.conf'
 
+alias cv='cava'
 
 #shutdown or reboot
 alias ssn="sudo shutdown now"
@@ -423,6 +424,7 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
+#clean
 neofetch
 #screenfetch
 #alsi
