@@ -71,9 +71,8 @@ ZSH_THEME="fino"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-
-zsh-syntax-highlighting 
-zsh-autosuggestions
+ zsh-syntax-highlighting 
+ zsh-autosuggestions
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -103,9 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-
 
 #pacman
 alias sps='sudo pacman -S'
@@ -140,7 +136,6 @@ alias wget="wget -c"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #grub issue 08/2022
 alias install-grub-efi="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi"
-
 alias  iso="cat /etc/os-release"
 
 #youtube download
@@ -149,7 +144,6 @@ alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias yta-flac="yt-dlp --extract-audio --audio-format flac "
 alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
-
 
 #Vim
 alias vim='nvim'
@@ -163,17 +157,14 @@ alias stx='startx'
 #clear
 alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
 
-
 #shutdown or reboot
 alias ssn="sudo shutdown now"
 alias sr="reboot"
-
 
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
-
 
 #switch between lightdm and sddm
 alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
@@ -184,8 +175,7 @@ alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable l
 
 #mirror
 alias mirror='svim /etc/pacman.conf'
-
 alias resolv='svim /etc/resolv.conf'
+nf
 
 
-clean
