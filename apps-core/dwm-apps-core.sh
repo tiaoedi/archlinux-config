@@ -17,7 +17,7 @@ sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dash
 
-sh yay.sh*
+#sh yay.sh*
 
 echo
 tput setaf 2
@@ -28,7 +28,7 @@ tput sgr0
 echo
 
  sudo pacman -Syyu --noconfirm --needed
- yay -S --noconfirm --needed paru-bin
+ #yay -S --noconfirm --needed paru-bin
 
 ##################################################################################################################
 
@@ -63,6 +63,7 @@ sudo pacman -S --noconfirm --needed alacritty-themes
 sudo pacman -S --noconfirm --needed arandr
 #sudo pacman -S --noconfirm --needed arc-darkest-theme-git
 sudo pacman -S --noconfirm --needed arc-gtk-theme
+sudo pacman -S --noconfirm --needed nwg-look  
 sudo pacman -S --noconfirm --needed archiso
 #sudo pacman -S --noconfirm --needed asciinema
 sudo pacman -S --noconfirm --needed avahi
@@ -144,7 +145,7 @@ sudo pacman -S --noconfirm --needed rate-mirrors-bin
 sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed scrot
-yay -S --noconfirm --needed sardi-icons
+#yay -S --noconfirm --needed sardi-icons
 #sudo pacman -S --noconfirm --needed simplescreenrecorder
 yay -S --noconfirm --needed sparklines-git
 sudo pacman -S --noconfirm --needed speedtest-cli-git
@@ -182,9 +183,9 @@ sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed xorg-xkill
 #sudo pacman -S --noconfirm --needed yay-bin
 sudo pacman -Syu
-yay -S --noconfirm --needed dwm
-yay -S --noconfirm --needed devour
-yay -S --noconfirm --needed betterlockscreen
+#yay -S --noconfirm --needed dwm
+#yay -S --noconfirm --needed devour
+#yay -S --noconfirm --needed betterlockscreen
 yay -S --noconfirm --needed mcmojave-cursors
 yay -S --noconfirm --needed gvfs
 yay -S --noconfirm --needed libadwaita-without-adwaita-git
@@ -192,7 +193,7 @@ sudo pacman -S --noconfirm --needed nwg-look
 yay -S --noconfirm --needed thorium-browser
 yay -S --noconfirm --needed fzf
 yay -S --noconfirm --needed mpstat
-yay -S --noconfirm --needed nwg-look
+#yay -S --noconfirm --needed nwg-look
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
@@ -212,9 +213,9 @@ sudo pacman -S --noconfirm --needed powerline
 sudo pacman -S --noconfirm --needed cameractrls
 sudo pacman -S --noconfirm --needed dropbox
 sudo pacman -S --noconfirm --needed kdeconnect
-yay -S --noconfirm --needed hypnotix
+#yay -S --noconfirm --needed hypnotix
 #sudo pacman -S --noconfirm --needed steam
-yay -S --noconfirm --needed google-chrome
+#yay -S --noconfirm --needed google-chrome
 #sudo pacman -S --noconfirm --needed brave
 sudo pacman -S --noconfirm --needed thunderbird
 sudo pacman -S --noconfirm --needed keepassxc
@@ -262,7 +263,9 @@ sudo pacman -S --noconfirm --needed unzip
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
+  sudo pacman -S --noconfirm --needed qt6ct
 fi
+
 
 ###############################################################################################
 
@@ -290,11 +293,11 @@ sh inst-fonts.sh*
 sh drive-som.sh*
 
 
-sudo cp Xsetup /usr/share/sddm/scripts/
-sudo cp sddm.conf /etc/
+#sudo cp Xsetup /usr/share/sddm/scripts/
+#sudo cp sddm.conf /etc/
 
-sudo mkdir -p /etc/X11/xorg.conf.d
-sudo cp 20-intel.conf /etc/X11/xorg.conf.d
+#sudo mkdir -p /etc/X11/xorg.conf.d
+#sudo cp 20-intel.conf /etc/X11/xorg.conf.d
 sudo cp environment /etc/
 sudo cp .bashrc ~
 
