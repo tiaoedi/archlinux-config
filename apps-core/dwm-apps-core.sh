@@ -193,6 +193,7 @@ sudo pacman -S --noconfirm --needed nwg-look
 yay -S --noconfirm --needed thorium-browser
 yay -S --noconfirm --needed fzf
 yay -S --noconfirm --needed mpstat
+yay -S --noconfirm --needed breeze 6.0.2-3
 #yay -S --noconfirm --needed nwg-look
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed zsh-completions
@@ -224,8 +225,8 @@ sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed thunar-archive-plugin
 sudo pacman -S --noconfirm --needed thunar-media-tags-plugin
 sudo pacman -S --noconfirm --needed thunar-volman
-sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
-sudo pacman -S --noconfirm --needed virtualbox
+#sudo pacman -S --noconfirm --needed virtualbox-host-modules-arch 
+#sudo pacman -S --noconfirm --needed virtualbox
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 sudo systemctl enable sddm
@@ -291,7 +292,7 @@ fi
 
 sh inst-fonts.sh*
 sh drive-som.sh*
-
+sh quemu.sh*
 
 #sudo cp Xsetup /usr/share/sddm/scripts/
 #sudo cp sddm.conf /etc/
