@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/pc120/dotfiles/wallpapers/default.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0A121B",
+        "foreground": "#77e8e1",
+        "cursor": "#77e8e1"
+    },
+    "colors": {
+        "color0": "#0A121B",
+        "color1": "#056F93",
+        "color2": "#039AA5",
+        "color3": "#02C2BC",
+        "color4": "#02A4D2",
+        "color5": "#01AFEE",
+        "color6": "#01D3D2",
+        "color7": "#77e8e1",
+        "color8": "#53a29d",
+        "color9": "#056F93",
+        "color10": "#039AA5",
+        "color11": "#02C2BC",
+        "color12": "#02A4D2",
+        "color13": "#01AFEE",
+        "color14": "#01D3D2",
+        "color15": "#77e8e1"
+    }
+}

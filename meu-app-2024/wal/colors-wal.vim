@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/pc120/wallpaper/default.jpg"
+let background = "#0A121B"
+let foreground = "#77e8e1"
+let cursor     = "#77e8e1"
+
+" Colors
+let color0  = "#0A121B"
+let color1  = "#056F93"
+let color2  = "#039AA5"
+let color3  = "#02C2BC"
+let color4  = "#02A4D2"
+let color5  = "#01AFEE"
+let color6  = "#01D3D2"
+let color7  = "#77e8e1"
+let color8  = "#53a29d"
+let color9  = "#056F93"
+let color10 = "#039AA5"
+let color11 = "#02C2BC"
+let color12 = "#02A4D2"
+let color13 = "#01AFEE"
+let color14 = "#01D3D2"
+let color15 = "#77e8e1"

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+folder="$HOME/Imagens/wallpaper/"
+pic=$(ls $folder/* | shuf -n1)
+
+if [[ ! `pidof feh` ]]; then
+        feh init &
+        sleep 1
+fi
+
+feh --bg-fill --transition-fps 90 $pic & &>/dev/null
+sleep 1

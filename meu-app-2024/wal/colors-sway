@@ -1,0 +1,21 @@
+set $wallpaper /home/pc120/wallpaper/default.jpg
+
+set $background #0A121B
+set $foreground #77e8e1
+
+set $color0 #0A121B
+set $color1 #056F93
+set $color2 #039AA5
+set $color3 #02C2BC
+set $color4 #02A4D2
+set $color5 #01AFEE
+set $color6 #01D3D2
+set $color7 #77e8e1
+set $color8 #53a29d
+set $color9 #056F93
+set $color10 #039AA5
+set $color11 #02C2BC
+set $color12 #02A4D2
+set $color13 #01AFEE
+set $color14 #01D3D2
+set $color15 #77e8e1
