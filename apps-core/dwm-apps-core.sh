@@ -214,6 +214,7 @@ sudo pacman -S --noconfirm --needed powerline
 sudo pacman -S --noconfirm --needed cameractrls
 sudo pacman -S --noconfirm --needed dropbox
 sudo pacman -S --noconfirm --needed kdeconnect
+sudo pacman -S --noconfirm --needed ninja
 #yay -S --noconfirm --needed hypnotix
 #sudo pacman -S --noconfirm --needed steam
 #yay -S --noconfirm --needed google-chrome
@@ -297,7 +298,7 @@ sh quemu.sh*
 #sudo cp Xsetup /usr/share/sddm/scripts/
 #sudo cp sddm.conf /etc/
 
-#sudo mkdir -p /etc/X11/xorg.conf.d
+ #sudo mkdir -p /etc/X11/xorg.conf.d
 #sudo cp 20-intel.conf /etc/X11/xorg.conf.d
 sudo cp environment /etc/
 sudo cp .bashrc ~
