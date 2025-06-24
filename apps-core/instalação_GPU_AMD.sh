@@ -1,10 +1,6 @@
 #!/bin/bash
 
-########################################################################
-#    Autor = Rodrigo (Rbgames Linux)                                   #
-#    Tecnico em TI, tecnico em redes e finalizando tecnologo em Redes  #
-#    E-mail = rbgameslinux@gmail.com                                   #
-########################################################################
+
 
 
 # Variaveis
@@ -13,7 +9,7 @@ Error='[\033[1;31mERRO\033[0m]'
 usuario=$(whoami)
 package_amd=(lib32-vulkan-radeon amd-ucode xf86-video-amdgpu xf86-video-ati vulkan-radeon)
 #package_intel=(vulkan-intel intel-ucode libva-intel-driver xf86-video-intel lib32-vulkan-intel)
-package_yay=(swayosd-git waypaper qt5ct-kde qt6ct-kde grimblast swaylock-effects reiserfsprogs wlogout protonup-qt-bin clipman clipse heroic-games-launcher-bin visual-studio-code-bin)   
+package_yay=(swayosd-git flameshot-git waypaper qt5ct-kde qt6ct-kde grimblast swaylock-effects reiserfsprogs wlogout protonup-qt-bin clipman clipse heroic-games-launcher-bin visual-studio-code-bin)   
 package_arch=(base-devel xorg-xhost git wget unzip genymotion bash-completion fish gum rofi wofi unrar okular waybar swww dolphin dolphin-plugins ark firefox pamac loupe xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland blueman bluedevil xdg-desktop-portal-wlr xdg-user-dirs xdg-user-dirs-gtk xdg-utils archlinux-xdg-menu btop ttf-font-awesome noto-fonts noto-fonts-emoji
     noto-fonts-extra ttf-firacode-nerd ttf-jetbrains-mono-nerd swayidle polkit-gnome bash-completion ntfs-3g ffmpegthumbnailer ffmpegthumbs volumeicon pavucontrol pamixer notification-daemon 
@@ -21,8 +17,9 @@ package_arch=(base-devel xorg-xhost git wget unzip genymotion bash-completion fi
     network-manager-applet exfat-utils btrfs-progs xfsprogs jfsutils f2fs-tools nilfs-utils udftools e2fsprogs kitty gedit libva fastfetch mangohud telegram-desktop discord wine filelight
     pacman-contrib wine-gecko wine-mono winetricks curl vulkan-tools vulkan-icd-loader lib32-vulkan-icd-loader lib32-mesa lm_sensors mesa-demos xorg-xdpyinfo mesa-utils glfw mesa llvm lib32-llvm
     lvm2 zip timeshift lutris linux-lts-headers linux-zen-headers steam gimp antimicrox celluloid mpv vlc android-tools hyprutils hyprland-qtutils qt6-5compat qt6-declarative qt6-svg
-    gnome-disk-utility gnome-calendar gnome-calculator ksnip swaync hyprland xorg-server xorg-xinit epapirus-icon-theme)
+    gnome-disk-utility gnome-calendar gnome-keyring gnome-calculator ksnip swaync hyprland xorg-server xorg-xinit epapirus-icon-theme)
 
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
 
     # Exibir "leia-me"
 
@@ -34,8 +31,9 @@ echo -e "
       LEIA-ME ANTES DE USAR     
 ===============================
 #########################################################
-# Autor = Rodrigo (Rbgames Linux)                       #
-# E-mail = rbgameslinux@gmail.com                       #
+# Autor = Sebastiao (Linuxlivre)                        #
+# E-mail = tiaoedi@outlook.com                          #
+# pix = tiaoedi@outlook.com                             #
 #########################################################
 
 Este script foi feito para Archlinux com placas de video AMD.
@@ -224,6 +222,8 @@ Reiniciando
 Pressione Enter para reiniciar, ou CTRL+C para cancelar."
 read -p ""
 sudo reboot
+
+# https://github.com/rbgameslinux/pos_install_hyprland
 
 ###################final do script #########################
 
