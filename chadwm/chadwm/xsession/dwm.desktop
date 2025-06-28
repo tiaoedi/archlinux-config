@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=dwm
-Comment=Dynamic window manager
-Exec=/usr/bin/exec-chadwm
-#Exec=~/.config/arco-chadwm/scripts/run.sh
-Icon=dwm
-Type=Application
