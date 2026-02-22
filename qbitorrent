@@ -1,0 +1,20 @@
+sudo docker run -d \
+  --name=qbittorrent \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=America/Sao_Paulo \
+  -e WEBUI_PORT=8080 \
+  -p 8080:8080 \
+  -p 6881:6881 \
+  -p 6881:6881/udp \
+  -v /appdata/qbittorrent/config:/config \
+  -v /appdata/qbittorrent/downloads:/downloads \
+  --restart unless-stopped \
+  lscr.io/linuxserver/qbittorrent:latest   
+
+
+#Acessar:
+#Abra no navegador: http://SEU_SERVIDOR:8080
+#Login padrão: admin / adminadmin (altere após o primeiro acesso) 
+#✅ Crie os diretórios antes:
+#mkdir -p /appdata/qbittorrent/{config,downloads}

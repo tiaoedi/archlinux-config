@@ -1,0 +1,14 @@
+sudo docker run -d \
+  --name=agentdvr \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e AGENTDVR_WEBUI_PORT=8090 \
+  -e TZ=America/Sao_Paulo \
+  -p 8090:8090 \
+  -p 3478:3478/udp \
+  -p 50000-50100:50000-50100/udp \
+  -v /appdata/agentdvr/config:/AgentDVR/Media/XML \
+  -v /appdata/agentdvr/media:/AgentDVR/Media/WebServerRoot/Media \
+  -v /appdata/agentdvr/commands:/AgentDVR/Commands \
+  --restart unless-stopped \
+  mekayelanik/ispyagentdvr:latest   
